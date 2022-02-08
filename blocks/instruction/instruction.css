@@ -1,0 +1,15 @@
+.instruction {
+	width: 312px;
+	margin: 0;
+	padding: 0;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 133%;
+    color: #9397A3;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 5;
+	align-self: start;
+	row-gap: 16px;
+}

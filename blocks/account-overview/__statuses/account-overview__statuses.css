@@ -1,0 +1,9 @@
+.account-overview__statuses {
+	display: grid;
+	grid-template-columns: min-content 1fr;
+	grid-template-rows: 3;
+	row-gap: 16px;
+	column-gap: 10px;
+	margin: 32px;
+	align-items: center;
+}
