@@ -33,12 +33,12 @@
 						</p>
 					</div>
 					<button class="account-overview__exit-button" type="button">
-						<div class="account-overview__exit-button-wrapper">
+						<span class="account-overview__exit-button-wrapper">
 							<img src="./images/door.svg" alt="Значок выхода" class="account-overview__button-pic">
-							<p class="account-overview__button-text">
+							<span class="account-overview__button-text">
 								Выйти из аккаунта
-							</p>
-						</div>
+							</span>
+						</span>
 					</button>
 				</div>
 				<div class="personal-data">
@@ -81,8 +81,33 @@
 					</p>
 				</div>
 			</div>
+			<form class="account-details">
+				<fieldset class="personal-data">
+					<legend class="form-title">Личные данные</legend>
+					<label class="input-label">ФИО</label>
+					<input id="fio" class="input-text" type="text" placeholder="Фамилия Имя Отчество">
+					<label class="input-label">Дата рождения</label>
+					<input id="date-of-birth" class="input-text" type="text" placeholder="01.01.1900">
+					<label class="input-label">Геграфический регион</label>
+					<input id="city" class="input-text" type="text" placeholder="г. Москва">
+					<label class="input-label">Позывной на форуме</label>
+					<input id="nick-name" class="input-text" type="text" placeholder="Позывной">
+					<label class="input-label">Фото</label>
+					<input id="photo" class="input-text" type="text" placeholder="photo.jpg">
+					<button class="personal-data__button save-button"></button>
+				</fieldset>
+				<fieldset class="account-data">
+					<legend class="form-title">Аккаунт</legend>
+					<label class="input-label">Номер телефона</label>
+					<input id="tel" class="input-text" type="tel" placeholder="+7 123 45 67">
+					<label class="input-label">Email</label>
+					<input id="email" class="input-text" type="email" placeholder="test@yandex.ru">
+					<label class="input-label">Пароль</label>
+					<input id="password" class="input-text" type="password">
+					<button class="account-data__button save-button"></button>
+				</fieldset>
+			</form>
 		</div>
-
 	</main>
 </body>
 
