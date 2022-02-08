@@ -2,3 +2,13 @@
 @import url('../vendor/fonts.css');
 @import url('../blocks/page/page.css');
 @import url('../blocks/form-title/form-title.css');
+@import url('../blocks/form-button/form-button.css');
+@import url('../blocks/account-details/account-details.css');
+@import url('../blocks/personal-data/personal-data.css');
+@import url('../blocks/text-field/text-field.css');
+@import url('../blocks/text-field/__icon/text-field__icon.css');
+@import url('../blocks/text-field/__image/text-field__image.css');
+@import url('../blocks/text-field/__image/text-field__image_photo.css');
+@import url('../blocks/text-field/__image/text-field__image_text.css');
+@import url('../blocks/text-field/__input/text-field__input.css');
+@import url('../blocks/text-field/__label/text-field__label.css');
