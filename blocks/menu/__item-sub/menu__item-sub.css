@@ -1,0 +1,5 @@
+.menu__item-sub {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}

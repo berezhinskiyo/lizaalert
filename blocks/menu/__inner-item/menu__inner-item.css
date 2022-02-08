@@ -1,0 +1,19 @@
+.menu__inner-item {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.menu__inner-item::before {
+	content: '';
+	width: 24px;
+	height: 24px;
+	background-image: url(../../../images/icon-inner.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding-right: 28px;
+}
+
+.menu__inner-item:hover {
+	cursor: pointer;
+}
+
