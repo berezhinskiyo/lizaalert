@@ -1,0 +1,8 @@
+.text-field__icon{
+	position: relative;
+}
+
+.text-field__icon input {
+	padding: 12px 56px 12px 16px;
+}
+
