@@ -6,3 +6,7 @@
 	color: #212329;
 	display: none;
 }
+
+.menu__erase:hover {
+	cursor: pointer;
+}

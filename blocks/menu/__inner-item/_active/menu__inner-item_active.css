@@ -2,12 +2,6 @@
 	color: #F06000;
 }
 .menu__inner-item_active::before {
-	content: '';
-	width: 24px;
-	height: 24px;
 	background-image: url(../../../../images/icon-inner-active.svg);
-	background-repeat: no-repeat;
-	background-size: contain;
-	padding-right: 28px;
 }
 

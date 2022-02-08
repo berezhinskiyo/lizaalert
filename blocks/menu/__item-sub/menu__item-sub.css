@@ -3,3 +3,7 @@
 	flex-direction: row;
 	justify-content: space-between;
 }
+
+.menu__item-sub:hover {
+	cursor: pointer;
+}
