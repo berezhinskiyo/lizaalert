@@ -3,6 +3,7 @@
 @import url('../blocks/page/page.css');
 @import url('../blocks/form-title/form-title.css');
 @import url('../blocks/form-button/form-button.css');
+@import url('../blocks/edit-form/edit-form.css');
 @import url('../blocks/account-details/account-details.css');
 @import url('../blocks/personal-data/personal-data.css');
 @import url('../blocks/text-field/text-field.css');
@@ -32,5 +33,3 @@
 @import url('../blocks/instruction/__paragraph/instruction__paragraph.css');
 @import url('../blocks/personal-data/personal-data.css');
 @import url('../blocks/instruction/__inner-list/instruction__inner-list.css');
-@import url('../blocks/personal-data-wrapper/personal-data-wrapper.css');
-

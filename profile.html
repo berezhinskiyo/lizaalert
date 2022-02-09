@@ -41,59 +41,58 @@
 						</span>
 					</button>
 				</div>
-				<div class="personal-data-wrapper">
-					<form class="account-details">
-						<fieldset class="personal-data">
-							<h3 class="form-title">Личные данные</h3>
-							<div class="text-field">
-								<label class="text-field__label" for="fio">ФИО</label>
-								<div class="text-field__icon">
-									<input id="fio" class="text-field__input" type="text"
-										placeholder="Фамилия Имя Отчество">
-									<div class="text-field__image text-field__image_text"></div>
-								</div>
+
+				<form class="edit-form account-details">
+					<fieldset class="personal-data">
+						<h3 class="form-title">Личные данные</h3>
+						<div class="text-field">
+							<label class="text-field__label" for="fio">ФИО</label>
+							<div class="text-field__icon">
+								<input id="fio" class="text-field__input" type="text"
+									placeholder="Фамилия Имя Отчество">
+								<div class="text-field__image text-field__image_text"></div>
 							</div>
+						</div>
 
-							<div class="text-field">
-								<label class="text-field__label" for="date-of-birth">Дата рождения</label>
-								<div class="text-field__icon">
-									<input id="date-of-birth" class="text-field__input" type="text"
-										placeholder="01.01.1900">
-									<div class="text-field__image text-field__image_text"></div>
-								</div>
+						<div class="text-field">
+							<label class="text-field__label" for="date-of-birth">Дата рождения</label>
+							<div class="text-field__icon">
+								<input id="date-of-birth" class="text-field__input" type="text"
+									placeholder="01.01.1900">
+								<div class="text-field__image text-field__image_text"></div>
 							</div>
+						</div>
 
-							<div class="text-field">
-								<label class="text-field__label" for="city">Геграфический регион</label>
-								<div class="text-field__icon">
-									<input id="city" class="text-field__input" type="text" placeholder="г. Москва">
-									<div class="text-field__image text-field__image_text"></div>
-								</div>
+						<div class="text-field">
+							<label class="text-field__label" for="city">Геграфический регион</label>
+							<div class="text-field__icon">
+								<input id="city" class="text-field__input" type="text" placeholder="г. Москва">
+								<div class="text-field__image text-field__image_text"></div>
 							</div>
+						</div>
 
-							<div class="text-field">
-								<label class="text-field__label" for="nick-name">Позывной на форуме</label>
-								<div class="text-field__icon">
-									<input id="nick-name" class="text-field__input" type="text"
-										placeholder="Позывной на форуме">
-									<div class="text-field__image text-field__image_text"></div>
-								</div>
+						<div class="text-field">
+							<label class="text-field__label" for="nick-name">Позывной на форуме</label>
+							<div class="text-field__icon">
+								<input id="nick-name" class="text-field__input" type="text"
+									placeholder="Позывной на форуме">
+								<div class="text-field__image text-field__image_text"></div>
 							</div>
+						</div>
 
-							<div class="text-field">
-								<label class="text-field__label" for="photo">Фото</label>
-								<div class="text-field__icon ">
-									<input id="photo" class="text-field__input" type="text"
-										placeholder="email@yandex.ru">
-									<div class="text-field__image text-field__image_photo"></div>
-								</div>
+						<div class="text-field">
+							<label class="text-field__label" for="photo">Фото</label>
+							<div class="text-field__icon ">
+								<input id="photo" class="text-field__input" type="text" placeholder="email@yandex.ru">
+								<div class="text-field__image text-field__image_photo"></div>
 							</div>
+						</div>
 
-							<button type="submit" class="form-button">Сохранить изменения</button>
+						<button type="submit" class="form-button">Сохранить изменения</button>
 
-						</fieldset>
-					</form>
-				</div>
+					</fieldset>
+				</form>
+
 				<div class="instruction instruction_type_upper">
 					<p class="instruction__paragraph">
 						Просьба указывать настоящие ФИО, это нужно для получения сертификатов
@@ -114,7 +113,7 @@
 						<li>размер не более 3 МБ</li>
 					</ul>
 				</div>
-				<div class="account-data">
+				<form class="edit form account-data">
 					<fieldset class="personal-data">
 
 						<h3 class="form-title">Аккаунт</h3>
@@ -145,7 +144,7 @@
 
 						<button type="submit" class="form-button">Сохранить изменения</button>
 					</fieldset>
-				</div>
+				</form>
 				<div class="instruction instruction_type_lower">
 					<p class="instruction__paragraph">
 						Номер телефона используется как уникальный идентификатор пользователя, поэтому его нельзя
@@ -162,87 +161,6 @@
 			</div>
 
 
-
-
-			<!-- <form class="account-details">
-				<fieldset class="personal-data">
-					<h3 class="form-title">Личные данные</h3>
-
-					<div class="text-field">
-						<label class="text-field__label" for="fio">ФИО</label>
-						<div class="text-field__icon">
-							<input id="fio" class="text-field__input" type="text" placeholder="Фамилия Имя Отчество">
-							<div class="text-field__image text-field__image_text"></div>
-						</div>
-					</div>
-
-					<div class="text-field">
-						<label class="text-field__label" for="date-of-birth">Дата рождения</label>
-						<div class="text-field__icon">
-							<input id="date-of-birth" class="text-field__input" type="text" placeholder="01.01.1900">
-							<div class="text-field__image text-field__image_text"></div>
-						</div>
-					</div>
-
-					<div class="text-field">
-						<label class="text-field__label" for="city">Геграфический регион</label>
-						<div class="text-field__icon">
-							<input id="city" class="text-field__input" type="text" placeholder="г. Москва">
-							<div class="text-field__image text-field__image_text"></div>
-						</div>
-					</div>
-
-					<div class="text-field">
-						<label class="text-field__label" for="nick-name">Позывной на форуме</label>
-						<div class="text-field__icon">
-							<input id="nick-name" class="text-field__input" type="text"
-								placeholder="Позывной на форуме">
-							<div class="text-field__image text-field__image_text"></div>
-						</div>
-					</div>
-
-					<div class="text-field">
-						<label class="text-field__label" for="photo">Фото</label>
-						<div class="text-field__icon ">
-							<input id="photo" class="text-field__input" type="text" placeholder="email@yandex.ru">
-							<div class="text-field__image text-field__image_photo"></div>
-						</div>
-					</div>
-
-					<button type="submit" class="form-button">Сохранить изменения</button>
-
-				</fieldset>
-				<fieldset class="personal-data">
-
-					<h3 class="form-title">Аккаунт</h3>
-
-					<div class="text-field">
-						<label class="text-field__label" for="tel">Номер телефона</label>
-						<div class="text-field__icon ">
-							<input id="tel" class="text-field__input" type="tel" placeholder="+7 123 45 67">
-							<div class="text-field__image text-field__image_text"></div>
-						</div>
-					</div>
-
-					<div class="text-field">
-						<label class="text-field__label" for="email">Email</label>
-						<div class="text-field__icon ">
-							<input id="email" class="text-field__input" type="email" placeholder="test@yandex.ru">
-							<div class="text-field__image text-field__image_text"></div>
-						</div>
-					</div>
-
-					<div class="text-field">
-						<label class="text-field__label" for="password">Пароль</label>
-						<div class="text-field__icon ">
-							<input id="password" class="text-field__input" type="password">
-							<div class="text-field__image"></div>
-						</div>
-					</div>
-
-					<button type="submit" class="form-button">Сохранить изменения</button>
-				</fieldset>
-			</form> -->
 		</div>
 	</main>
 </body>
