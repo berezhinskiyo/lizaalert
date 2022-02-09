@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LizaAlert</title>
+	<link rel="stylesheet" href="pages/profile.css">
+</head>
+
+<body>
+	<main class="page">
+		<header class="header">
+		</header>
+		<div class="profile-main">
+			<h2 class="profile-title">Профиль</h2>
+			<div class="profile-table">
+				<div class="account-overview">
+					<img src="./images/avatar.svg" alt="Фотография пользователя" class="account-overview__avatar">
+					<h3 class="account-overview__capture">Иванова Анна Сидоровна</h3>
+					<div class="account-overview__statuses">
+						<img src="./images/net.svg" alt="Значок опыта" class="account-overview__pic">
+						<p class="account-overview__status">
+							Профессионал
+						</p>
+						<img src="./images/medal.svg" alt="Значок профессии" class="account-overview__pic">
+						<p class="account-overview__status">
+							Картограф
+						</p>
+						<img src="./images/cap.svg" alt="Значок прогресса" class="account-overview__pic">
+						<p class="account-overview__status">
+							Пройдено 2 курса
+						</p>
+					</div>
+					<button class="account-overview__exit-button" type="button">
+						<span class="account-overview__exit-button-wrapper">
+							<img src="./images/door.svg" alt="Значок выхода" class="account-overview__button-pic">
+							<span class="account-overview__button-text">
+								Выйти из аккаунта
+							</span>
+						</span>
+					</button>
+				</div>
+				<div class="personal-data-wrapper">
+					<form class="account-details">
+						<fieldset class="personal-data">
+							<h3 class="form-title">Личные данные</h3>
+							<div class="text-field">
+								<label class="text-field__label" for="fio">ФИО</label>
+								<div class="text-field__icon">
+									<input id="fio" class="text-field__input" type="text"
+										placeholder="Фамилия Имя Отчество">
+									<div class="text-field__image text-field__image_text"></div>
+								</div>
+							</div>
+
+							<div class="text-field">
+								<label class="text-field__label" for="date-of-birth">Дата рождения</label>
+								<div class="text-field__icon">
+									<input id="date-of-birth" class="text-field__input" type="text"
+										placeholder="01.01.1900">
+									<div class="text-field__image text-field__image_text"></div>
+								</div>
+							</div>
+
+							<div class="text-field">
+								<label class="text-field__label" for="city">Геграфический регион</label>
+								<div class="text-field__icon">
+									<input id="city" class="text-field__input" type="text" placeholder="г. Москва">
+									<div class="text-field__image text-field__image_text"></div>
+								</div>
+							</div>
+
+							<div class="text-field">
+								<label class="text-field__label" for="nick-name">Позывной на форуме</label>
+								<div class="text-field__icon">
+									<input id="nick-name" class="text-field__input" type="text"
+										placeholder="Позывной на форуме">
+									<div class="text-field__image text-field__image_text"></div>
+								</div>
+							</div>
+
+							<div class="text-field">
+								<label class="text-field__label" for="photo">Фото</label>
+								<div class="text-field__icon ">
+									<input id="photo" class="text-field__input" type="text"
+										placeholder="email@yandex.ru">
+									<div class="text-field__image text-field__image_photo"></div>
+								</div>
+							</div>
+
+							<button type="submit" class="form-button">Сохранить изменения</button>
+
+						</fieldset>
+					</form>
+				</div>
+				<div class="instruction instruction_type_upper">
+					<p class="instruction__paragraph">
+						Просьба указывать настоящие ФИО, это нужно для получения сертификатов
+					</p>
+					<p class="instruction__paragraph">
+						Географический регион влияет на доступность некоторых курсов и занятий
+					</p>
+					<p class="instruction__paragraph">
+						Если вы не хотите, чтобы другие пользователи видели ваши ФИО, укажите позывной на форуме —
+						он будет
+						отображаться вместо ваших настоящих данных
+					</p>
+					<p class="instruction__paragraph">
+						Требования к загружаемому фото:
+					</p>
+					<ul class="instruction__inner-list">
+						<li>разрешение не менее 640x640px</li>
+						<li>размер не более 3 МБ</li>
+					</ul>
+				</div>
+				<div class="account-data">
+					<fieldset class="personal-data">
+
+						<h3 class="form-title">Аккаунт</h3>
+
+						<div class="text-field">
+							<label class="text-field__label" for="tel">Номер телефона</label>
+							<div class="text-field__icon ">
+								<input id="tel" class="text-field__input" type="tel" placeholder="+7 123 45 67">
+								<div class="text-field__image text-field__image_text"></div>
+							</div>
+						</div>
+
+						<div class="text-field">
+							<label class="text-field__label" for="email">Email</label>
+							<div class="text-field__icon ">
+								<input id="email" class="text-field__input" type="email" placeholder="test@yandex.ru">
+								<div class="text-field__image text-field__image_text"></div>
+							</div>
+						</div>
+
+						<div class="text-field">
+							<label class="text-field__label" for="password">Пароль</label>
+							<div class="text-field__icon ">
+								<input id="password" class="text-field__input" type="password">
+								<div class="text-field__image"></div>
+							</div>
+						</div>
+
+						<button type="submit" class="form-button">Сохранить изменения</button>
+					</fieldset>
+				</div>
+				<div class="instruction instruction_type_lower">
+					<p class="instruction__paragraph">
+						Номер телефона используется как уникальный идентификатор пользователя, поэтому его нельзя
+						поменять вручную
+					</p>
+					<p class="instruction__paragraph">
+						Если по какой-то причине у вас нет доступа к номеру телефона на который вы регистрировали
+						аккаунт, напишите в поддержку
+					</p>
+					<p class="instruction__paragraph">
+						Email нужен для восстановления пароля
+					</p>
+				</div>
+			</div>
+
+
+
+
+			<!-- <form class="account-details">
+				<fieldset class="personal-data">
+					<h3 class="form-title">Личные данные</h3>
+
+					<div class="text-field">
+						<label class="text-field__label" for="fio">ФИО</label>
+						<div class="text-field__icon">
+							<input id="fio" class="text-field__input" type="text" placeholder="Фамилия Имя Отчество">
+							<div class="text-field__image text-field__image_text"></div>
+						</div>
+					</div>
+
+					<div class="text-field">
+						<label class="text-field__label" for="date-of-birth">Дата рождения</label>
+						<div class="text-field__icon">
+							<input id="date-of-birth" class="text-field__input" type="text" placeholder="01.01.1900">
+							<div class="text-field__image text-field__image_text"></div>
+						</div>
+					</div>
+
+					<div class="text-field">
+						<label class="text-field__label" for="city">Геграфический регион</label>
+						<div class="text-field__icon">
+							<input id="city" class="text-field__input" type="text" placeholder="г. Москва">
+							<div class="text-field__image text-field__image_text"></div>
+						</div>
+					</div>
+
+					<div class="text-field">
+						<label class="text-field__label" for="nick-name">Позывной на форуме</label>
+						<div class="text-field__icon">
+							<input id="nick-name" class="text-field__input" type="text"
+								placeholder="Позывной на форуме">
+							<div class="text-field__image text-field__image_text"></div>
+						</div>
+					</div>
+
+					<div class="text-field">
+						<label class="text-field__label" for="photo">Фото</label>
+						<div class="text-field__icon ">
+							<input id="photo" class="text-field__input" type="text" placeholder="email@yandex.ru">
+							<div class="text-field__image text-field__image_photo"></div>
+						</div>
+					</div>
+
+					<button type="submit" class="form-button">Сохранить изменения</button>
+
+				</fieldset>
+				<fieldset class="personal-data">
+
+					<h3 class="form-title">Аккаунт</h3>
+
+					<div class="text-field">
+						<label class="text-field__label" for="tel">Номер телефона</label>
+						<div class="text-field__icon ">
+							<input id="tel" class="text-field__input" type="tel" placeholder="+7 123 45 67">
+							<div class="text-field__image text-field__image_text"></div>
+						</div>
+					</div>
+
+					<div class="text-field">
+						<label class="text-field__label" for="email">Email</label>
+						<div class="text-field__icon ">
+							<input id="email" class="text-field__input" type="email" placeholder="test@yandex.ru">
+							<div class="text-field__image text-field__image_text"></div>
+						</div>
+					</div>
+
+					<div class="text-field">
+						<label class="text-field__label" for="password">Пароль</label>
+						<div class="text-field__icon ">
+							<input id="password" class="text-field__input" type="password">
+							<div class="text-field__image"></div>
+						</div>
+					</div>
+
+					<button type="submit" class="form-button">Сохранить изменения</button>
+				</fieldset>
+			</form> -->
+		</div>
+	</main>
+</body>
+
+</html>
