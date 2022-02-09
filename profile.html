@@ -41,8 +41,58 @@
 						</span>
 					</button>
 				</div>
-				<div class="personal-data">
-					personal-data stub
+				<div class="personal-data-wrapper">
+					<form class="account-details">
+						<fieldset class="personal-data">
+							<h3 class="form-title">Личные данные</h3>
+							<div class="text-field">
+								<label class="text-field__label" for="fio">ФИО</label>
+								<div class="text-field__icon">
+									<input id="fio" class="text-field__input" type="text"
+										placeholder="Фамилия Имя Отчество">
+									<div class="text-field__image text-field__image_text"></div>
+								</div>
+							</div>
+
+							<div class="text-field">
+								<label class="text-field__label" for="date-of-birth">Дата рождения</label>
+								<div class="text-field__icon">
+									<input id="date-of-birth" class="text-field__input" type="text"
+										placeholder="01.01.1900">
+									<div class="text-field__image text-field__image_text"></div>
+								</div>
+							</div>
+
+							<div class="text-field">
+								<label class="text-field__label" for="city">Геграфический регион</label>
+								<div class="text-field__icon">
+									<input id="city" class="text-field__input" type="text" placeholder="г. Москва">
+									<div class="text-field__image text-field__image_text"></div>
+								</div>
+							</div>
+
+							<div class="text-field">
+								<label class="text-field__label" for="nick-name">Позывной на форуме</label>
+								<div class="text-field__icon">
+									<input id="nick-name" class="text-field__input" type="text"
+										placeholder="Позывной на форуме">
+									<div class="text-field__image text-field__image_text"></div>
+								</div>
+							</div>
+
+							<div class="text-field">
+								<label class="text-field__label" for="photo">Фото</label>
+								<div class="text-field__icon ">
+									<input id="photo" class="text-field__input" type="text"
+										placeholder="email@yandex.ru">
+									<div class="text-field__image text-field__image_photo"></div>
+								</div>
+							</div>
+
+							<button type="submit" class="form-button">Сохранить изменения</button>
+
+						</fieldset>
+					</form>
 				</div>
 				<div class="instruction instruction_type_upper">
 					<p class="instruction__paragraph">
@@ -65,7 +115,36 @@
 					</ul>
 				</div>
 				<div class="account-data">
-					account-data stub
+					<fieldset class="personal-data">
+
+						<h3 class="form-title">Аккаунт</h3>
+
+						<div class="text-field">
+							<label class="text-field__label" for="tel">Номер телефона</label>
+							<div class="text-field__icon ">
+								<input id="tel" class="text-field__input" type="tel" placeholder="+7 123 45 67">
+								<div class="text-field__image text-field__image_text"></div>
+							</div>
+						</div>
+
+						<div class="text-field">
+							<label class="text-field__label" for="email">Email</label>
+							<div class="text-field__icon ">
+								<input id="email" class="text-field__input" type="email" placeholder="test@yandex.ru">
+								<div class="text-field__image text-field__image_text"></div>
+							</div>
+						</div>
+
+						<div class="text-field">
+							<label class="text-field__label" for="password">Пароль</label>
+							<div class="text-field__icon ">
+								<input id="password" class="text-field__input" type="password">
+								<div class="text-field__image"></div>
+							</div>
+						</div>
+
+						<button type="submit" class="form-button">Сохранить изменения</button>
+					</fieldset>
 				</div>
 				<div class="instruction instruction_type_lower">
 					<p class="instruction__paragraph">
@@ -81,7 +160,11 @@
 					</p>
 				</div>
 			</div>
-			<form class="account-details">
+
+
+
+
+			<!-- <form class="account-details">
 				<fieldset class="personal-data">
 					<h3 class="form-title">Личные данные</h3>
 
@@ -159,7 +242,7 @@
 
 					<button type="submit" class="form-button">Сохранить изменения</button>
 				</fieldset>
-			</form>
+			</form> -->
 		</div>
 	</main>
 </body>

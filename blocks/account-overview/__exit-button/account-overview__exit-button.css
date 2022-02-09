@@ -1,17 +1,17 @@
 .account-overview__exit-button {
-	padding: 0;
-	border: 1.2px solid #E6E7EB;
-	background-color: transparent;
-	cursor: pointer;
-	border-radius: 16px;
-	transition: border 0.6s linear 0s;
-	margin: 0 auto 32px auto;
 	display: block;
 	width: 247px;
 	height: 48px;
+	margin: 0 auto 32px auto;
+	padding: 0;
+	background-color: transparent;
+	border: 1.2px solid #e6e7eb;
+	border-radius: 16px;
+	cursor: pointer;
+	transition: border 0.6s linear 0s;
 }
 
 .account-overview__exit-button:hover {
-	border: 2px solid #FF6600;
+	border: 2px solid #ff6600;
 	cursor: pointer;
 }

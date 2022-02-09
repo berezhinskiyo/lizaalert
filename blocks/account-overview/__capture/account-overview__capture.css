@@ -1,9 +1,9 @@
 .account-overview__capture {
-	text-align: center;
-	font-style: normal;
+	margin: 0;
+	color: #212329;
 	font-weight: bold;
 	font-size: 18px;
-	line-height: 133%;
-	color: #212329;
-	margin: 0;
+	font-style: normal;
+	line-height: 1.33;
+	text-align: center;
 }
