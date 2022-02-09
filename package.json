@@ -3,7 +3,7 @@
 	"devDependencies": {
 		"@htmlacademy/editorconfig-cli": "1.0.0",
 		"eslint": "^8.7.0",
-		"stylelint": "^13.13.1",
+		"stylelint": "^14.4.0",
 		"stylelint-order": "^5.0.0"
 	},
 	"scripts": {
