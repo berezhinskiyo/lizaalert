@@ -1,5 +1,5 @@
 .account-data {
-	width: 648px;
 	grid-area: account-data;
+	width: 648px;
 	min-height: 508px;
 }
