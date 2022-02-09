@@ -1,0 +1,10 @@
+.account-overview__exit-button-wrapper {
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: min-content 1fr;
+	align-items: center;
+	width: 195px;
+	margin: 12px auto;
+	text-align: center;
+	column-gap: 12px;
+}
