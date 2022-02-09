@@ -20,3 +20,5 @@
 @import url(../blocks/menu/__title/menu__title.css);
 @import url(../blocks/tags/tags.css);
 @import url(../blocks/tags/__item/tags__item.css);
+@import url(../blocks/tags/__icon/tags__icon.css);
+@import url(../blocks/tags/__text/tags__text.css);
