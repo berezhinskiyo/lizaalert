@@ -1,47 +1,52 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>LizaAlert</title>
-	<link rel="stylesheet" href="pages/profile.css">
-</head>
-
-<body>
-	<main class="page">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>LizaAlert</title>
+		<link rel="stylesheet" href="pages/profile.css" />
+	</head>
+	<body class="page">
 		<header class="header">
+			<div class="header__title">Учебная платформа</div>
+			<nav>
+				<ul class="header__links">
+					<li>
+						<a class="header__link" href="./index.html">
+							<img
+								class="header__logo"
+								src="./images/Kurs.svg"
+							/>Курсы
+						</a>
+					</li>
+					<li class="header__link">
+						<a
+							class="header__link header__link_active"
+							href="./profile.html"
+						>
+							<img
+								class="header__logo"
+								src="./images/Profile_active.svg"
+							/>Профиль
+						</a>
+					</li>
+				</ul>
+			</nav>
 		</header>
-		<div class="main">
-			<form class="account-details">
-				<fieldset class="personal-data">
-					<legend class="form-title">Личные данные</legend>
-					<label class="input-label">ФИО</label>
-					<input id="fio" class="input-text" type="text" placeholder="Фамилия Имя Отчество">
-					<label class="input-label">Дата рождения</label>
-					<input id="date-of-birth" class="input-text" type="text" placeholder="01.01.1900">
-					<label class="input-label">Геграфический регион</label>
-					<input id="city" class="input-text" type="text" placeholder="г. Москва">
-					<label class="input-label">Позывной на форуме</label>
-					<input id="nick-name" class="input-text" type="text" placeholder="Позывной">
-					<label class="input-label">Фото</label>
-					<input id="photo" class="input-text" type="text" placeholder="photo.jpg">
-					<button class="personal-data__button save-button"></button>
-				</fieldset>
-				<fieldset class="account-data">
-					<legend class="form-title">Аккаунт</legend>
-					<label class="input-label">Номер телефона</label>
-					<input id="tel" class="input-text" type="tel" placeholder="+7 123 45 67">
-					<label class="input-label">Email</label>
-					<input id="email" class="input-text" type="email" placeholder="test@yandex.ru">
-					<label class="input-label">Пароль</label>
-					<input id="password" class="input-text" type="password">
-					<button class="account-data__button save-button"></button>
-				</fieldset>
-			</form>
-		</div>
+		<main class="main">
+             <h1 class="main__title">Профиль</h1>
+			 <div class="main__contant">
+               <div class="d1"></div>
 
-	</main>
-</body>
+				   <div class="grid1">
+					<div class="d2"></div>
+					<div class="d1"></div>
+					<div class="d2"></div>
+					<div class="d1"></div>
+				   </div>
 
+
+			</div>
+		</main>
+	</body>
 </html>

@@ -1,0 +1,33 @@
+.main__contant {
+	gap: 24px;
+	display: grid;
+	grid-template-columns: 312px 984px;
+}
+.d1 {
+	width: 312px;
+	background-color: red;
+	border-radius: 30px;
+	height: 400px;
+}
+.d2 {
+	width: 648px;
+	background-color: red;
+	border-radius: 30px;
+	height: 600px;
+}
+.d3 {
+	width: 984px;
+	background-color: red;
+	border-radius: 30px;
+	height: 200px;
+}
+.grid1{
+	display: grid;
+	gap: 24px;
+	grid-template-columns: 648px 312px;
+}
+.grid2{
+	display: grid;
+	gap: 24px;
+	grid-template-columns: 984px;
+}
