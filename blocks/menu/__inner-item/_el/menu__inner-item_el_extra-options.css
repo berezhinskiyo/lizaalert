@@ -1,0 +1,15 @@
+.menu__inner-item_el_extra-options {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+}
+.menu__inner-item_el_extra-options:checked + .menu__pseudo-item_type_checkbox {
+	background-image: url(../../../../images/icon-inner-active.svg);
+	width: 24px;
+	height: 24px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	border: 0;
+}

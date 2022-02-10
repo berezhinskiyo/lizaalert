@@ -37,23 +37,51 @@
 						<h3 class="menu__item-title">Уровень</h3>
 						<div class="menu__item-icon menu__item-icon_active"></div>
 					</div>
-					<ul class="menu__inner menu__inner_active">
-						<li class="menu__inner-item menu__inner-item_active">Новичок</li>
-						<li class="menu__inner-item menu__inner-item_active">Бывалый</li>
-						<li class="menu__inner-item">Профессионал</li>
-					</ul>
+          <form name="level" class="menu__inner menu__inner_active">
+            <label class="menu__inner-item menu__inner-item_active" for="novice">
+              <input type="checkbox" name="extra-option" id="novice" class="menu__inner-item menu__inner-item_el_extra-options" value="novice" checked>
+              <span class="menu__pseudo-item menu__pseudo-item_type_checkbox"></span>
+              <span class="menu__inner-item-text">Новичок</span>
+            </label>
+						<label class="menu__inner-item menu__inner-item_active" for="advance">
+              <input type="checkbox" name="extra-option" id="advance" class="menu__inner-item menu__inner-item_el_extra-options" value="advance" checked>
+              <span class="menu__pseudo-item menu__pseudo-item_type_checkbox"></span>
+              <span class="menu__inner-item-text">Бывалый</span>
+            </label>
+						<label class="menu__inner-item" for="profi">
+              <input type="checkbox" name="extra-option" id="profi" class="menu__inner-item menu__inner-item_el_extra-options" value="profi" >
+              <span class="menu__pseudo-item menu__pseudo-item_type_checkbox"></span>
+              <span class="menu__inner-item-text">Профессионал</span>
+            </label>
+          </form>
 				</li>
 				<li class="menu__item">
 					<div class="menu__item-sub">
 						<h3 class="menu__item-title">Статус</h3>
 						<div class="menu__item-icon menu__item-icon_active"></div>
 					</div>
-					<ul class="menu__inner menu__inner_active">
-						<li class="menu__inner-item">Не активный</li>
-						<li class="menu__inner-item">Вы записаны</li>
-						<li class="menu__inner-item">Активный</li>
-						<li class="menu__inner-item">Пройден</li>
-					</ul>
+					<form name="status" class="menu__inner menu__inner_active">
+            <label class="menu__inner-item" for="inactive">
+              <input type="checkbox" name="extra-option" id="inactive" class="menu__inner-item menu__inner-item_el_extra-options" value="inactive">
+              <span class="menu__pseudo-item menu__pseudo-item_type_checkbox"></span>
+              <span class="menu__inner-item-text">Не активный</span>
+            </label>
+						<label class="menu__inner-item" for="recorded">
+              <input type="checkbox" name="extra-option" id="recorded" class="menu__inner-item menu__inner-item_el_extra-options" value="recorded">
+              <span class="menu__pseudo-item menu__pseudo-item_type_checkbox"></span>
+              <span class="menu__inner-item-text">Вы записаны</span>
+            </label>
+						<label class="menu__inner-item" for="active">
+              <input type="checkbox" name="extra-option" id="active" class="menu__inner-item menu__inner-item_el_extra-options" value="active" >
+              <span class="menu__pseudo-item menu__pseudo-item_type_checkbox"></span>
+              <span class="menu__inner-item-text">Активный</span>
+            </label>
+						<label class="menu__inner-item" for="finished">
+              <input type="checkbox" name="extra-option" id="finished" class="menu__inner-item menu__inner-item_el_extra-options" value="finished" >
+              <span class="menu__pseudo-item menu__pseudo-item_type_checkbox"></span>
+              <span class="menu__inner-item-text">Пройден</span>
+            </label>
+          </form>
 				</li>
 			</ul>
 
@@ -67,6 +95,7 @@
 					<div class="tags__icon"></div>
 				</div>
 			</div>
+
 		</section>
 
 

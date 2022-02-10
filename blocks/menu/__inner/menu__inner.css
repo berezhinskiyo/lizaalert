@@ -1,6 +1,5 @@
 .menu__inner {
-	list-style-type: none;
-	padding-top: 32px;
+	padding-top: 31px;
 	display: flex;
 	flex-direction: column;
 	row-gap: 16px;
