@@ -6,7 +6,6 @@
 @import url(../blocks/menu/__erase/menu__erase.css);
 @import url(../blocks/menu/__erase/_active/menu__erase_active.css);
 @import url(../blocks/menu/__inner-item/menu__inner-item.css);
-@import url(../blocks/menu/__inner-item/_active/menu__inner-item_active.css);
 @import url(../blocks/menu/__inner-item/_el/menu__inner-item_el_extra-options.css);
 @import url(../blocks/menu/__inner-item-text/menu__inner-item-text.css);
 @import url(../blocks/menu/__pseudo-item/menu__pseudo-item.css);

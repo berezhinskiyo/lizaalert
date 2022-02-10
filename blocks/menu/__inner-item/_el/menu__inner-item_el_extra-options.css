@@ -5,6 +5,7 @@
 	overflow: hidden;
 	clip: rect(0 0 0 0);
 }
+
 .menu__inner-item_el_extra-options:checked + .menu__pseudo-item_type_checkbox {
 	background-image: url(../../../../images/icon-inner-active.svg);
 	width: 24px;
@@ -12,4 +13,20 @@
 	background-repeat: no-repeat;
 	background-size: contain;
 	border: 0;
+}
+
+.menu__inner-item_el_extra-options:checked ~ .menu__inner-item-text {
+	color: #F06000;
+}
+
+.menu__inner-item_el_extra-options:disabled + .menu__pseudo-item_type_checkbox {
+	background-image: url(../../../../images/icon-inner-disabled.svg);
+	width: 24px;
+	height: 24px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	border: 0;
+}
+.menu__inner-item_el_extra-options:disabled ~ .menu__inner-item-text {
+	color: #a09e9d;
 }
