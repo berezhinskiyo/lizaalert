@@ -1,6 +1,6 @@
 node_modules
 dist
-
+.github
 .vscode
 .idea
 .DS_Store
