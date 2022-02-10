@@ -1,0 +1,9 @@
+.profile-table {
+	display: grid;
+	grid-template-columns: 312px 648px 312px;
+	grid-template-areas:
+		'overview account-details instruction-upper'
+		'. account-data instruction-lower';
+	row-gap: 24px;
+	column-gap: 24px;
+}
