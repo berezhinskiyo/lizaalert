@@ -1,13 +1,13 @@
 .tags__item {
 	display: flex;
 	flex-direction: row;
+	align-items: center;
 	column-gap: 6px;
-	align-items:center;
-	background-color: #E6E7EB;
-	border-radius: 16px;
+	background-color: #e6e7eb;
 	box-sizing: border-box;
-	padding-left: 6px;
+	border-radius: 16px;
 	padding-right: 2px;
+	padding-left: 6px;
 	font-size: 18px;
 	line-height: 24px;
 }

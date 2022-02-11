@@ -2,9 +2,9 @@
 	margin: 0;
 	font-weight: 500;
 	font-size: 18px;
-	line-height: 24px;
-	color: #212329;
 	display: none;
+	color: #212329;
+	line-height: 24px;
 }
 
 .menu__erase:hover {
