@@ -1,15 +1,16 @@
 .header__link {
-	font-style: normal;
-	font-weight: 500;
-	font-size: 18px;
-	line-height: 24px;
-	text-decoration: none;
-	color: #212329;
 	display: flex;
 	align-items: center;
+	color: #212329;
+	font-weight: 500;
+	font-size: 18px;
+	font-style: normal;
+	line-height: 24px;
+	text-decoration: none;
 }
+
 .header__link:hover {
-	transition: 1s ease-out;
-	opacity: 0.6;
 	cursor: pointer;
+	opacity: 0.6;
+	transition: 1s ease-out;
 }
