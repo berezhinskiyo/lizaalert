@@ -1,20 +1,47 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>LizaAlert</title>
-	<link rel="stylesheet" href="pages/index.css">
-</head>
-
-<body>
-	<main class="page">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>LizaAlert</title>
+		<link rel="stylesheet" href="pages/index.css" />
+	</head>
+	<body class="page">
 		<header class="header">
+			<div class="header__title">Учебная платформа</div>
+			<nav>
+				<ul class="header__links">
+					<li>
+						<a
+							class="header__link header__link_active"
+							href="./index.html"
+						>
+							<img
+								class="header__logo"
+								src="./images/Kurs_active.svg"
+								alt="Тут была академическая шапочка"
+							/>Курсы
+						</a>
+					</li>
+					<li class="header__link">
+						<a class="header__link" href="./profile.html">
+							<img
+								class="header__logo"
+								src="./images/Profile.svg"
+								alt="Тут был человечек в круге"
+							/>Профиль
+						</a>
+					</li>
+				</ul>
+			</nav>
 		</header>
-		<div class="main">
-
-			<div class="card-list">
+		<main class="main">
+			<h1 class="main__title">Курсы</h1>
+			<div class="contant">
+				<div class="d1"></div>
+				<!-- Заменить d1 на  фильтры-->
+				<div class="contant__kurs">
+          	<div class="card-list">
 				<img class="card-list__img" src="images/01.jpg" alt="Собака">
 				<div class="card-list__main-info">
 					<div class="card-list__title-n-level">
@@ -217,9 +244,8 @@
 					<button class="card-list__card-button card-list__card-button_passed">Пройден</button>
 				</div>
 			</div>
-
-		</div>
-	</main>
-</body>
-
+				</div>
+			</div>
+		</main>
+	</body>
 </html>
