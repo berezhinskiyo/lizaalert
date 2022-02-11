@@ -1,7 +1,9 @@
-.header__title {
+.card-list__time-text{
+	box-sizing: border-box;
 	margin: 0;
+	padding: 0;
 	color: #212329;
-	font-weight: bold;
+	font-weight: normal;
 	font-size: 18px;
 	font-style: normal;
 	line-height: 1.3;

@@ -1,0 +1,13 @@
+.card-list__time{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	box-sizing: border-box;
+	margin: 0;
+	margin-bottom: 16px;
+	padding: 0;
+}
+
+.card-list__time:last-of-type{
+	margin-bottom: 0;
+}

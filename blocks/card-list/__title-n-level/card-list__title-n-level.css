@@ -1,0 +1,10 @@
+.card-list__title-n-level{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	box-sizing: border-box;
+	width: 448px;
+	margin: 0;
+	margin-top: 32px;
+	padding: 0;
+}

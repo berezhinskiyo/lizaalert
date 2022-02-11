@@ -1,10 +1,10 @@
 .main__title {
-	font-style: normal;
+	width: 1440px;
+	margin: 0;
+	padding-bottom: 34px;
+	color: #212329;
 	font-weight: bold;
 	font-size: 48px;
-	line-height: 52px;
-	padding-bottom: 34px;
-	width: 1440px;
-	color: #212329;
-	margin: 0px;
+	font-style: normal;
+	line-height: 1.08;
 }
