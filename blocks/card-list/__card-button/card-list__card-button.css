@@ -1,20 +1,18 @@
 .card-list__card-button{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font: inherit;
-  color: inherit;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 12px 24px;
-  width: 224px;
-  border-radius: 16px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 24px;
-  cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	width: 224px;
+	padding: 0;
+	padding: 12px 24px;
+	color: inherit;
+	font: inherit;
+	font-weight: 500;
+	font-size: 18px;
+	font-style: normal;
+	line-height: 24px;
+	border: none;
+	border-radius: 16px;
+	cursor: pointer;
 }

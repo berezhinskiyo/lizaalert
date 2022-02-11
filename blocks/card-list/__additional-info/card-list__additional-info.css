@@ -1,12 +1,12 @@
 .card-list__additional-info{
-	margin: 0;
-	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: flex-end;
+	box-sizing: border-box;
 	width: 288px;
-	padding: 32px;
 	height: 240px;
+	margin: 0;
 	margin-left: 24px;
+	padding: 32px;
 }

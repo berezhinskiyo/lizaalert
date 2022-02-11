@@ -1,9 +1,9 @@
 .card-list__info{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  width: 224px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	box-sizing: border-box;
+	width: 224px;
+	margin: 0;
+	padding: 0;
 }
