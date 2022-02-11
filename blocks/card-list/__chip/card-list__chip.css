@@ -1,0 +1,14 @@
+.card-list__chip{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  padding: 0px 8px;
+  margin-top: 16px;
+  background: #E6E7EB;
+  border-radius: 16px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #212329;
+}

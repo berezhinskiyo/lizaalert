@@ -1,0 +1,10 @@
+.card-list__main-info{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 448px;
+  margin-left: 24px;
+}
