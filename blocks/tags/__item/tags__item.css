@@ -3,13 +3,13 @@
 	flex-direction: row;
 	align-items: center;
 	column-gap: 6px;
-	background-color: #e6e7eb;
 	box-sizing: border-box;
-	border-radius: 16px;
+	background-color: #e6e7eb;
 	padding-right: 2px;
 	padding-left: 6px;
 	font-size: 18px;
 	line-height: 24px;
+	border-radius: 16px;
 }
 
 .tags__item:hover {

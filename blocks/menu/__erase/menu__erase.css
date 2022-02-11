@@ -1,8 +1,8 @@
 .menu__erase {
 	margin: 0;
+	display: none;
 	font-weight: 500;
 	font-size: 18px;
-	display: none;
 	color: #212329;
 	line-height: 24px;
 }

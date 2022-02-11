@@ -1,14 +1,13 @@
 .menu {
 	margin: 0;
-	padding-inline-start: 0;
 	display: flex;
-	padding: 32px;
 	flex-direction: column;
+	padding: 32px;
 	row-gap: 32px;
 	max-width: 312px;
-	border-radius: 16px;
 	box-sizing: border-box;
+	border-radius: 16px;
 	background: #ffffff;
-	box-shadow: 0 0 4px rgba(231, 232, 235, 0.6), 0 4px 16px rgba(231, 232, 235, 0.6);
 	margin-bottom: 32px;
+	box-shadow: 0 0 4px rgba(231, 232, 235, 0.6), 0 4px 16px rgba(231, 232, 235, 0.6);
 }

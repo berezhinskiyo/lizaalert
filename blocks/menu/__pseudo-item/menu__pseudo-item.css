@@ -1,8 +1,8 @@
 .menu__pseudo-item {
 	display: inline-block; /* элемент span для ширины и высоты */
-	vertical-align: bottom; /* элемент и текст по вертикали. Работает в паре с inline-block */
 	width: 24px;
 	height: 24px;
+	vertical-align: bottom; /* элемент и текст по вертикали. Работает в паре с inline-block */
 	background-image: url('../../../images/icon-inner.svg');
 	background-repeat: no-repeat;
 	background-size: contain;
