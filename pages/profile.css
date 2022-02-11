@@ -19,8 +19,8 @@
 @import url('../blocks/text-field/text-field.css');
 @import url('../blocks/text-field/__icon/text-field__icon.css');
 @import url('../blocks/text-field/__image/text-field__image.css');
-@import url('../blocks/text-field/__image/text-field__image_photo.css');
-@import url('../blocks/text-field/__image/text-field__image_text.css');
+@import url('../blocks/text-field/__image/_type/text-field__image_type_photo.css');
+@import url('../blocks/text-field/__image/_type/text-field__image_type_text.css');
 @import url('../blocks/text-field/__input/text-field__input.css');
 @import url('../blocks/text-field/__label/text-field__label.css');
 @import url('../blocks/profile-main/profile-main.css');
