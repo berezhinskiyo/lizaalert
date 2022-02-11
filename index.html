@@ -1,251 +1,335 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>LizaAlert</title>
-		<link rel="stylesheet" href="pages/index.css" />
-	</head>
-	<body class="page">
-		<header class="header">
-			<div class="header__title">Учебная платформа</div>
-			<nav>
-				<ul class="header__links">
-					<li>
-						<a
-							class="header__link header__link_active"
-							href="./index.html"
-						>
-							<img
-								class="header__logo"
-								src="./images/Kurs_active.svg"
-								alt="Тут была академическая шапочка"
-							/>Курсы
-						</a>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>LizaAlert</title>
+	<link rel="stylesheet" href="pages/index.css" />
+</head>
+
+<body class="page">
+	<header class="header">
+		<div class="header__title">Учебная платформа</div>
+		<nav>
+			<ul class="header__links">
+				<li>
+					<a class="header__link header__link_active" href="./index.html">
+						<img class="header__logo" src="./images/Kurs_active.svg"
+							alt="Тут была академическая шапочка" />Курсы
+					</a>
+				</li>
+				<li class="header__link">
+					<a class="header__link" href="./profile.html">
+						<img class="header__logo" src="./images/Profile.svg" alt="Тут был человечек в круге" />Профиль
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main class="main">
+		<h1 class="main__title">Курсы</h1>
+		<div class="contant">
+			<div class="filters">
+				<ul class="menu">
+					<li class="menu__item">
+						<h2 class="menu__title">Фильтры</h2>
+						<p class="menu__erase menu__erase_active">Очистить</p>
 					</li>
-					<li class="header__link">
-						<a class="header__link" href="./profile.html">
-							<img
-								class="header__logo"
-								src="./images/Profile.svg"
-								alt="Тут был человечек в круге"
-							/>Профиль
-						</a>
+					<li class="menu__item">
+						<div class="menu__item-sub">
+							<h3 class="menu__item-title">Категория</h3>
+							<div class="menu__item-icon"></div>
+						</div>
+					</li>
+					<li class="menu__item">
+						<div class="menu__item-sub">
+							<h3 class="menu__item-title">Тематика</h3>
+							<div class="menu__item-icon"></div>
+						</div>
+					</li>
+					<li class="menu__item">
+						<div class="menu__item-sub">
+							<h3 class="menu__item-title">Уровень</h3>
+							<div class="menu__item-icon menu__item-icon_active"></div>
+						</div>
+						<form name="level" class="menu__inner menu__inner_active">
+							<label class="menu__inner-item" for="novice">
+								<input type="checkbox" name="lev" id="novice"
+									class="menu__inner-item menu__inner-item_el_extra-options" value="novice" checked>
+								<span class="menu__pseudo-item menu__pseudo-item_type_checkbox"></span>
+								<span class="menu__inner-item-text">Новичок</span>
+							</label>
+							<label class="menu__inner-item" for="advance">
+								<input type="checkbox" name="lev" id="advance"
+									class="menu__inner-item menu__inner-item_el_extra-options" value="advance" checked>
+								<span class="menu__pseudo-item menu__pseudo-item_type_checkbox"></span>
+								<span class="menu__inner-item-text">Бывалый</span>
+							</label>
+							<label class="menu__inner-item" for="profi">
+								<input type="checkbox" name="lev" id="profi"
+									class="menu__inner-item menu__inner-item_el_extra-options" value="profi">
+								<span class="menu__pseudo-item menu__pseudo-item_type_checkbox"></span>
+								<span class="menu__inner-item-text">Профессионал</span>
+							</label>
+						</form>
+					</li>
+					<li class="menu__item">
+						<div class="menu__item-sub">
+							<h3 class="menu__item-title">Статус</h3>
+							<div class="menu__item-icon menu__item-icon_active"></div>
+						</div>
+						<form name="status" class="menu__inner menu__inner_active">
+							<label class="menu__inner-item" for="inactive">
+								<input type="checkbox" name="stat" id="inactive"
+									class="menu__inner-item menu__inner-item_el_extra-options" value="inactive">
+								<span class="menu__pseudo-item menu__pseudo-item_type_checkbox"></span>
+								<span class="menu__inner-item-text">Не активный</span>
+							</label>
+							<label class="menu__inner-item" for="recorded">
+								<input type="checkbox" name="stat" id="recorded"
+									class="menu__inner-item menu__inner-item_el_extra-options" value="recorded">
+								<span class="menu__pseudo-item menu__pseudo-item_type_checkbox"></span>
+								<span class="menu__inner-item-text">Вы записаны</span>
+							</label>
+							<label class="menu__inner-item" for="active">
+								<input type="checkbox" name="stat" id="active"
+									class="menu__inner-item menu__inner-item_el_extra-options" value="active">
+								<span class="menu__pseudo-item menu__pseudo-item_type_checkbox"></span>
+								<span class="menu__inner-item-text">Активный</span>
+							</label>
+							<label class="menu__inner-item" for="finished">
+								<input type="checkbox" name="stat" id="finished"
+									class="menu__inner-item menu__inner-item_el_extra-options" value="finished">
+								<span class="menu__pseudo-item menu__pseudo-item_type_checkbox"></span>
+								<span class="menu__inner-item-text">Пройден</span>
+							</label>
+						</form>
 					</li>
 				</ul>
-			</nav>
-		</header>
-		<main class="main">
-			<h1 class="main__title">Курсы</h1>
-			<div class="contant">
-				<div class="d1"></div>
-				<!-- Заменить d1 на  фильтры-->
-				<div class="contant__kurs">
-          	<div class="card-list">
-				<img class="card-list__img" src="images/01.jpg" alt="Собака">
-				<div class="card-list__main-info">
-					<div class="card-list__title-n-level">
-						<p class="card-list__name-cours">Кинологическое направление</p>
-						<p class="card-list__chip">Бывалый</p>
+
+				<div class="tags">
+					<div class="tags__item">
+						<p class="tags__text">Новичок</p>
+						<div class="tags__icon"></div>
 					</div>
-					<p class="card-list__subtitle">Поисково-спасательная работа, следовая работа, а&nbsp;так&nbsp;же
-						поиск тел
-						погибших с&nbsp;помощью собак</p>
-				</div>
-				<div class="card-list__additional-info">
-					<div class="card-list__info">
-						<div class="card-list__time">
-							<div class="card-list__icon card-list__icon_book"></div>
-							<p class="card-list__time-text">144 занятия</p>
-						</div>
-						<div class="card-list__time">
-							<div class="card-list__icon card-list__icon_clock"></div>
-							<p class="card-list__time-text">144 ч</p>
-						</div>
+					<div class="tags__item">
+						<p class="tags__text">Бывалый</p>
+						<div class="tags__icon"></div>
 					</div>
-					<button class="card-list__card-button card-list__card-button_continue">Продолжить</button>
 				</div>
 			</div>
-			<div class="card-list">
-				<img class="card-list__img" src="images/02.jpg" alt="Дежурные">
-				<div class="card-list__main-info">
-					<div class="card-list__title-n-level">
-						<p class="card-list__name-cours">Оперативные дежурные</p>
-						<p class="card-list__chip">Профессионал</p>
+			<div class="contant__kurs">
+				<div class="card-list">
+					<img class="card-list__img" src="images/01.jpg" alt="Собака">
+					<div class="card-list__main-info">
+						<div class="card-list__title-n-level">
+							<p class="card-list__name-cours">Кинологическое направление</p>
+							<p class="card-list__chip">Бывалый</p>
+						</div>
+						<p class="card-list__subtitle">Поисково-спасательная работа, следовая работа, а&nbsp;так&nbsp;же
+							поиск тел
+							погибших с&nbsp;помощью собак</p>
 					</div>
-					<p class="card-list__subtitle">Оперативное реагирование, контроль поступающих заявок и&nbsp;звонков,
-						распределение задач, помощь в&nbsp;решении
-						вопросов,удалённое ...</p>
+					<div class="card-list__additional-info">
+						<div class="card-list__info">
+							<div class="card-list__time">
+								<div class="card-list__icon card-list__icon_book"></div>
+								<p class="card-list__time-text">144 занятия</p>
+							</div>
+							<div class="card-list__time">
+								<div class="card-list__icon card-list__icon_clock"></div>
+								<p class="card-list__time-text">144 ч</p>
+							</div>
+						</div>
+						<button class="card-list__card-button card-list__card-button_continue">Продолжить</button>
+					</div>
 				</div>
-				<div class="card-list__additional-info">
-					<div class="card-list__info">
-						<div class="card-list__time">
-							<div class="card-list__icon card-list__icon_book"></div>
-							<p class="card-list__time-text">144 занятия</p>
+				<div class="card-list">
+					<img class="card-list__img" src="images/02.jpg" alt="Дежурные">
+					<div class="card-list__main-info">
+						<div class="card-list__title-n-level">
+							<p class="card-list__name-cours">Оперативные дежурные</p>
+							<p class="card-list__chip">Профессионал</p>
 						</div>
-						<div class="card-list__time">
-							<div class="card-list__icon card-list__icon_clock"></div>
-							<p class="card-list__time-text">144 ч</p>
-						</div>
+						<p class="card-list__subtitle">Оперативное реагирование, контроль поступающих заявок
+							и&nbsp;звонков,
+							распределение задач, помощь в&nbsp;решении
+							вопросов,удалённое ...</p>
 					</div>
-					<button class="card-list__card-button card-list__card-button_sign-up">Записаться</button>
+					<div class="card-list__additional-info">
+						<div class="card-list__info">
+							<div class="card-list__time">
+								<div class="card-list__icon card-list__icon_book"></div>
+								<p class="card-list__time-text">144 занятия</p>
+							</div>
+							<div class="card-list__time">
+								<div class="card-list__icon card-list__icon_clock"></div>
+								<p class="card-list__time-text">144 ч</p>
+							</div>
+						</div>
+						<button class="card-list__card-button card-list__card-button_sign-up">Записаться</button>
+					</div>
+				</div>
+				<div class="card-list">
+					<img class="card-list__img" src="images/03.jpg" alt="Беспилотники">
+					<div class="card-list__main-info">
+						<div class="card-list__title-n-level">
+							<p class="card-list__name-cours">Беспилотные летательные аппараты</p>
+							<p class="card-list__chip">Бывалый</p>
+						</div>
+						<p class="card-list__subtitle">Применение БПЛА в&nbsp;поиске людей, а&nbsp;так&nbsp;же передача
+							полученной
+							с&nbsp;помощью техники информации
+							спасательным службам</p>
+					</div>
+					<div class="card-list__additional-info">
+						<div class="card-list__info">
+							<div class="card-list__time">
+								<div class="card-list__icon card-list__icon_book"></div>
+								<p class="card-list__time-text">144 занятия</p>
+							</div>
+							<div class="card-list__time">
+								<div class="card-list__icon card-list__icon_clock"></div>
+								<p class="card-list__time-text">144 ч</p>
+							</div>
+						</div>
+						<button class="card-list__card-button card-list__card-button_sign-up">Записаться</button>
+					</div>
+				</div>
+				<div class="card-list">
+					<img class="card-list__img" src="images/04.jpg" alt="Первая помощь">
+					<div class="card-list__main-info">
+						<div class="card-list__title-n-level">
+							<p class="card-list__name-cours">Первая помощь</p>
+							<p class="card-list__chip">Бывалый</p>
+						</div>
+						<p class="card-list__subtitle">Основы оказания первой помощи на&nbsp;поиске, юридические
+							аспекты,
+							базовые
+							алгоритмы, разбор ошибок при оказания помощи
+							на&nbsp;поиске</p>
+					</div>
+					<div class="card-list__additional-info">
+						<div class="card-list__info">
+							<div class="card-list__time">
+								<div class="card-list__icon card-list__icon_book"></div>
+								<p class="card-list__time-text">144 занятия</p>
+							</div>
+							<div class="card-list__time">
+								<div class="card-list__icon card-list__icon_clock"></div>
+								<p class="card-list__time-text">144 ч</p>
+							</div>
+						</div>
+						<button class="card-list__card-button card-list__card-button_sign-up">Записаться</button>
+					</div>
+				</div>
+				<div class="card-list">
+					<img class="card-list__img" src="images/05.jpg" alt="Инфогруппа">
+					<div class="card-list__main-info">
+						<div class="card-list__title-n-level">
+							<p class="card-list__name-cours">Инфогруппа</p>
+							<p class="card-list__chip">Новичок</p>
+						</div>
+						<p class="card-list__subtitle">Создание ориентировок, заказ карт, связь через мини АТС,
+							обеспечение
+							поиска
+						</p>
+					</div>
+					<div class="card-list__additional-info">
+						<div class="card-list__info">
+							<div class="card-list__time">
+								<div class="card-list__icon card-list__icon_book"></div>
+								<p class="card-list__time-text">144 занятия</p>
+							</div>
+							<div class="card-list__time">
+								<div class="card-list__icon card-list__icon_clock"></div>
+								<p class="card-list__time-text">144 ч</p>
+							</div>
+						</div>
+						<button class="card-list__card-button card-list__card-button_passed">Пройден</button>
+					</div>
+				</div>
+				<div class="card-list">
+					<img class="card-list__img" src="images/06.jpg" alt="Оператор телефона">
+					<div class="card-list__main-info">
+						<div class="card-list__title-n-level">
+							<p class="card-list__name-cours">Операторы 8-800</p>
+							<p class="card-list__chip">Новичок</p>
+						</div>
+						<p class="card-list__subtitle">Приём заявок на&nbsp;поиск людей с&nbsp;последующей передачей
+							информации
+							инфоргам</p>
+					</div>
+					<div class="card-list__additional-info">
+						<div class="card-list__info">
+							<div class="card-list__time">
+								<div class="card-list__icon card-list__icon_book"></div>
+								<p class="card-list__time-text">144 занятия</p>
+							</div>
+							<div class="card-list__time">
+								<div class="card-list__icon card-list__icon_clock"></div>
+								<p class="card-list__time-text">144 ч</p>
+							</div>
+						</div>
+						<button class="card-list__card-button card-list__card-button_sign-up">Записаться</button>
+					</div>
+				</div>
+				<div class="card-list">
+					<img class="card-list__img" src="images/07.jpg" alt="Разговор по телефону">
+					<div class="card-list__main-info">
+						<div class="card-list__title-n-level">
+							<p class="card-list__name-cours">Группа коротких прозвонов</p>
+							<p class="card-list__chip">Новичок</p>
+						</div>
+						<p class="card-list__subtitle">Прозвон больниц, ОВД, различных ведомств, иногда свидетелей
+							и&nbsp;возможных
+							свидетелей</p>
+					</div>
+					<div class="card-list__additional-info">
+						<div class="card-list__info">
+							<div class="card-list__time">
+								<div class="card-list__icon card-list__icon_book"></div>
+								<p class="card-list__time-text">144 занятия</p>
+							</div>
+							<div class="card-list__time">
+								<div class="card-list__icon card-list__icon_clock"></div>
+								<p class="card-list__time-text">144 ч</p>
+							</div>
+						</div>
+						<button class="card-list__card-button card-list__card-button_sign-up">Записаться</button>
+					</div>
+				</div>
+				<div class="card-list">
+					<img class="card-list__img" src="images/08.jpg" alt="Спасатель">
+					<div class="card-list__main-info">
+						<div class="card-list__title-n-level">
+							<p class="card-list__name-cours">Новичковая</p>
+							<p class="card-list__chip">Новичок</p>
+						</div>
+						<p class="card-list__subtitle">Короткое описание курса. людей в&nbsp;лесу и&nbsp;в&nbsp;городе.
+							Все
+							поисковые
+							мероприятия организуются силами
+							добровольцев &quot;ЛизаАлер...</p>
+					</div>
+					<div class="card-list__additional-info">
+						<div class="card-list__info">
+							<div class="card-list__time">
+								<div class="card-list__icon card-list__icon_book"></div>
+								<p class="card-list__time-text">144 занятия</p>
+							</div>
+							<div class="card-list__time">
+								<div class="card-list__icon card-list__icon_clock"></div>
+								<p class="card-list__time-text">144 ч</p>
+							</div>
+						</div>
+						<button class="card-list__card-button card-list__card-button_passed">Пройден</button>
+					</div>
 				</div>
 			</div>
-			<div class="card-list">
-				<img class="card-list__img" src="images/03.jpg" alt="Беспилотники">
-				<div class="card-list__main-info">
-					<div class="card-list__title-n-level">
-						<p class="card-list__name-cours">Беспилотные летательные аппараты</p>
-						<p class="card-list__chip">Бывалый</p>
-					</div>
-					<p class="card-list__subtitle">Применение БПЛА в&nbsp;поиске людей, а&nbsp;так&nbsp;же передача
-						полученной
-						с&nbsp;помощью техники информации
-						спасательным службам</p>
-				</div>
-				<div class="card-list__additional-info">
-					<div class="card-list__info">
-						<div class="card-list__time">
-							<div class="card-list__icon card-list__icon_book"></div>
-							<p class="card-list__time-text">144 занятия</p>
-						</div>
-						<div class="card-list__time">
-							<div class="card-list__icon card-list__icon_clock"></div>
-							<p class="card-list__time-text">144 ч</p>
-						</div>
-					</div>
-					<button class="card-list__card-button card-list__card-button_sign-up">Записаться</button>
-				</div>
-			</div>
-			<div class="card-list">
-				<img class="card-list__img" src="images/04.jpg" alt="Первая помощь">
-				<div class="card-list__main-info">
-					<div class="card-list__title-n-level">
-						<p class="card-list__name-cours">Первая помощь</p>
-						<p class="card-list__chip">Бывалый</p>
-					</div>
-					<p class="card-list__subtitle">Основы оказания первой помощи на&nbsp;поиске, юридические аспекты,
-						базовые
-						алгоритмы, разбор ошибок при оказания помощи
-						на&nbsp;поиске</p>
-				</div>
-				<div class="card-list__additional-info">
-					<div class="card-list__info">
-						<div class="card-list__time">
-							<div class="card-list__icon card-list__icon_book"></div>
-							<p class="card-list__time-text">144 занятия</p>
-						</div>
-						<div class="card-list__time">
-							<div class="card-list__icon card-list__icon_clock"></div>
-							<p class="card-list__time-text">144 ч</p>
-						</div>
-					</div>
-					<button class="card-list__card-button card-list__card-button_sign-up">Записаться</button>
-				</div>
-			</div>
-			<div class="card-list">
-				<img class="card-list__img" src="images/05.jpg" alt="Инфогруппа">
-				<div class="card-list__main-info">
-					<div class="card-list__title-n-level">
-						<p class="card-list__name-cours">Инфогруппа</p>
-						<p class="card-list__chip">Новичок</p>
-					</div>
-					<p class="card-list__subtitle">Создание ориентировок, заказ карт, связь через мини АТС, обеспечение
-						поиска
-					</p>
-				</div>
-				<div class="card-list__additional-info">
-					<div class="card-list__info">
-						<div class="card-list__time">
-							<div class="card-list__icon card-list__icon_book"></div>
-							<p class="card-list__time-text">144 занятия</p>
-						</div>
-						<div class="card-list__time">
-							<div class="card-list__icon card-list__icon_clock"></div>
-							<p class="card-list__time-text">144 ч</p>
-						</div>
-					</div>
-					<button class="card-list__card-button card-list__card-button_passed">Пройден</button>
-				</div>
-			</div>
-			<div class="card-list">
-				<img class="card-list__img" src="images/06.jpg" alt="Оператор телефона">
-				<div class="card-list__main-info">
-					<div class="card-list__title-n-level">
-						<p class="card-list__name-cours">Операторы 8-800</p>
-						<p class="card-list__chip">Новичок</p>
-					</div>
-					<p class="card-list__subtitle">Приём заявок на&nbsp;поиск людей с&nbsp;последующей передачей
-						информации
-						инфоргам</p>
-				</div>
-				<div class="card-list__additional-info">
-					<div class="card-list__info">
-						<div class="card-list__time">
-							<div class="card-list__icon card-list__icon_book"></div>
-							<p class="card-list__time-text">144 занятия</p>
-						</div>
-						<div class="card-list__time">
-							<div class="card-list__icon card-list__icon_clock"></div>
-							<p class="card-list__time-text">144 ч</p>
-						</div>
-					</div>
-					<button class="card-list__card-button card-list__card-button_sign-up">Записаться</button>
-				</div>
-			</div>
-			<div class="card-list">
-				<img class="card-list__img" src="images/07.jpg" alt="Разговор по телефону">
-				<div class="card-list__main-info">
-					<div class="card-list__title-n-level">
-						<p class="card-list__name-cours">Группа коротких прозвонов</p>
-						<p class="card-list__chip">Новичок</p>
-					</div>
-					<p class="card-list__subtitle">Прозвон больниц, ОВД, различных ведомств, иногда свидетелей
-						и&nbsp;возможных
-						свидетелей</p>
-				</div>
-				<div class="card-list__additional-info">
-					<div class="card-list__info">
-						<div class="card-list__time">
-							<div class="card-list__icon card-list__icon_book"></div>
-							<p class="card-list__time-text">144 занятия</p>
-						</div>
-						<div class="card-list__time">
-							<div class="card-list__icon card-list__icon_clock"></div>
-							<p class="card-list__time-text">144 ч</p>
-						</div>
-					</div>
-					<button class="card-list__card-button card-list__card-button_sign-up">Записаться</button>
-				</div>
-			</div>
-			<div class="card-list">
-				<img class="card-list__img" src="images/08.jpg" alt="Спасатель">
-				<div class="card-list__main-info">
-					<div class="card-list__title-n-level">
-						<p class="card-list__name-cours">Новичковая</p>
-						<p class="card-list__chip">Новичок</p>
-					</div>
-					<p class="card-list__subtitle">Короткое описание курса. людей в&nbsp;лесу и&nbsp;в&nbsp;городе. Все
-						поисковые
-						мероприятия организуются силами
-						добровольцев &quot;ЛизаАлер...</p>
-				</div>
-				<div class="card-list__additional-info">
-					<div class="card-list__info">
-						<div class="card-list__time">
-							<div class="card-list__icon card-list__icon_book"></div>
-							<p class="card-list__time-text">144 занятия</p>
-						</div>
-						<div class="card-list__time">
-							<div class="card-list__icon card-list__icon_clock"></div>
-							<p class="card-list__time-text">144 ч</p>
-						</div>
-					</div>
-					<button class="card-list__card-button card-list__card-button_passed">Пройден</button>
-				</div>
-			</div>
-				</div>
-			</div>
-		</main>
-	</body>
+		</div>
+	</main>
+</body>
+
 </html>
