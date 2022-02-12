@@ -12,6 +12,7 @@
 	background: #f06000;
 	border: 0;
 	border-radius: 16px;
+	cursor: pointer;
 }
 
 .form-button:disabled {
