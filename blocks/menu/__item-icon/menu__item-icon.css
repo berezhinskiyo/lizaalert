@@ -1,5 +1,12 @@
 .menu__item-icon {
 	width: 24px;
 	height: 24px;
+	text-decoration: none;
+	background-color: #ffffff;
 	background-image: url('../../../images/icon-item.svg');
+	border: none;
+}
+
+.menu__item-icon:hover {
+	cursor: pointer;
 }

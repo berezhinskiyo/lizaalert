@@ -1,7 +1,16 @@
 .tags__icon {
 	width: 24px;
 	height: 24px;
+	text-decoration: none;
+	background-color: #e6e7eb;
 	background-image: url('../../../images/icon-tag.svg');
 	background-repeat: no-repeat;
 	background-size: contain;
+	border: none;
+	border-radius: 50%;
 }
+
+.tags__icon:hover {
+	cursor: pointer;
+}
+
