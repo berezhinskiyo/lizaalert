@@ -3,8 +3,8 @@
 	height: 24px;
 	text-decoration: none;
 	background-color: #ffffff;
-	border: none;
 	background-image: url('../../../images/icon-item.svg');
+	border: none;
 }
 
 .menu__item-icon:hover {

@@ -3,10 +3,10 @@
 	height: 24px;
 	text-decoration: none;
 	background-color: #e6e7eb;
-	border: none;
 	background-image: url('../../../images/icon-tag.svg');
 	background-repeat: no-repeat;
 	background-size: contain;
+	border: none;
 	border-radius: 50%;
 }
 
