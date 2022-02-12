@@ -28,7 +28,7 @@
 	</header>
 	<main class="main">
 		<h1 class="main__title">Профиль</h1>
-		<div class="contant">
+		<div class="content">
 			<div class="account-overview">
 				<img src="./images/avatar.svg" alt="Фотография пользователя" class="account-overview__avatar" />
 				<h3 class="account-overview__capture">
@@ -51,11 +51,11 @@
 					</span>
 				</button>
 			</div>
-			<div class="contant__profile">
+			<div class="content__profile">
 
 				<form class="edit-form">
-					<fieldset class="personal-data">
-						<h3 class="form-title">Личные данные</h3>
+					<fieldset class="edit-form__personal-data">
+						<h3 class="edit-form__title">Личные данные</h3>
 						<div class="text-field">
 							<label class="text-field__label" for="fio">ФИО</label>
 							<div class="text-field__icon">
@@ -98,7 +98,7 @@
 								<div class="text-field__image text-field__image_type_photo"></div>
 							</div>
 						</div>
-						<button type="submit" class="form-button" disabled>
+						<button type="submit" class="edit-form__button" disabled>
 							Сохранить изменения
 						</button>
 					</fieldset>
@@ -124,9 +124,9 @@
 						<li>размер не&nbsp;более 3&nbsp;МБ</li>
 					</ul>
 				</div>
-				<form class="edit form ">
-					<fieldset class="personal-data">
-						<h3 class="form-title">Аккаунт</h3>
+				<form class="edit-form">
+					<fieldset class="edit-form__personal-data">
+						<h3 class="edit-form__title">Аккаунт</h3>
 
 						<div class="text-field">
 							<label class="text-field__label" for="tel">Номер телефона</label>
@@ -152,12 +152,12 @@
 							</div>
 						</div>
 
-						<button type="submit" class="form-button">
+						<button type="submit" class="edit-form__button">
 							Сохранить изменения
 						</button>
 					</fieldset>
 				</form>
-				<div class="instruction ">
+				<div class="instruction">
 					<p class="instruction__paragraph">
 						Номер телефона используется как уникальный идентификатор пользователя, поэтому его нельзя
 						поменять вручную

@@ -1,4 +1,4 @@
-.form-button{
+.edit-form__button{
 	width: 246px;
 	height: 48px;
 	margin: 0 auto 0 auto;
@@ -15,7 +15,7 @@
 	cursor: pointer;
 }
 
-.form-button:disabled {
+.edit-form__button:disabled {
 	color: #9397a3;
 	background-color: #e6e7eb;
 }
