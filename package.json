@@ -8,9 +8,9 @@
 	},
 	"scripts": {
 		"editorconfig": "editorconfig-cli",
-		"stylelint": "stylelint \"src/**/*.css\"",
-		"stylelint:fixed": "stylelint \"src/**/*.css\" --fix",
-		"eslint": "eslint src/**/*.js",
+		"stylelint": "stylelint \"**/*.css\"",
+		"stylelint:fixed": "stylelint \"**/*.css\" --fix",
+		"eslint": "eslint **/*.js",
 		"test": "npm run editorconfig && npm run stylelint"
 	},
 	"editorconfig-cli": [
