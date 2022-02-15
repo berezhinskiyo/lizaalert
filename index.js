@@ -7,19 +7,7 @@ const advance = document.getElementById('advance');
 const advanceTxt = document.querySelector('label[for=' + advance.value + ']').querySelector('.menu__inner-item-text').textContent;
 const profi = document.getElementById('profi');
 const profiTxt = document.querySelector('label[for=' + profi.value + ']').querySelector('.menu__inner-item-text').textContent;
-const dateOfBirth = document.querySelector('#date-of-birth');
 const buttons = document.querySelectorAll('.card-list__card-button');
-
-//Создание маски ввода даты
-dateOfBirth.addEventListener('keyup', function (evt) {
-	if (v.match(/^\d{2}$/) !== null || v.match(/^\d{2}\.\d{2}$/) !== null) {
-		this.value = v + '.';
-	}
-});
-
-
-
-
 
 // Функция открытия-закрытия списков фильтров
 function closeOpenFilters(menuItem) {
