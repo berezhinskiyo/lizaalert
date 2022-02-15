@@ -9,7 +9,7 @@ const advanceTxt = document.querySelector('label[for=' + advance.value + ']').qu
 const profi = document.getElementById('profi');
 const profiTxt = document.querySelector('label[for=' + profi.value + ']').querySelector('.menu__inner-item-text').textContent;
 const buttons = document.querySelectorAll('.card-list__card-button');
-console.log(buttons);
+
 
 // Функция открытия-закрытия списков фильтров
 function closeOpenFilters(menuItem) {
@@ -68,18 +68,6 @@ profi.addEventListener('change', function () {
 
 // кнопка
 
-
-//button.addEventListener('click', function () {
-//if (button.classList.contains('card-list__card-button_continue')) {
-//console.log("кнопка продолжить")
-//}
-//else {
-//сonsole.log("другая кнопка")
-//}
-
-//});
-
-// ...
 buttons.forEach(button => {
 	button.addEventListener('click', function () {
 		if (button.classList.contains('card-list__card-button_sign-up')) {
