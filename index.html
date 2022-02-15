@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>LizaAlert</title>
 	<link rel="stylesheet" href="pages/index.css" />
+	<script src="./index.js" defer=""></script>
 </head>
 
 <body class="page">
@@ -55,13 +56,13 @@
 						<form name="level" class="menu__inner menu__inner_active">
 							<label class="menu__inner-item" for="novice">
 								<input type="checkbox" name="lev" id="novice"
-									class="menu__inner-item menu__inner-item_el_extra-options" value="novice" checked>
+									class="menu__inner-item menu__inner-item_el_extra-options" value="novice">
 								<span class="menu__pseudo-item menu__pseudo-item_type_checkbox"></span>
 								<span class="menu__inner-item-text">Новичок</span>
 							</label>
 							<label class="menu__inner-item" for="advance">
 								<input type="checkbox" name="lev" id="advance"
-									class="menu__inner-item menu__inner-item_el_extra-options" value="advance" checked>
+									class="menu__inner-item menu__inner-item_el_extra-options" value="advance">
 								<span class="menu__pseudo-item menu__pseudo-item_type_checkbox"></span>
 								<span class="menu__inner-item-text">Бывалый</span>
 							</label>
@@ -108,14 +109,6 @@
 				</ul>
 
 				<div class="tags">
-					<div class="tags__item">
-						<p class="tags__text">Новичок</p>
-						<button type="button" class="tags__icon"></button>
-					</div>
-					<div class="tags__item">
-						<p class="tags__text">Бывалый</p>
-						<button type="button" class="tags__icon"></button>
-					</div>
 				</div>
 			</div>
 			<div class="content__kurs">
@@ -327,6 +320,14 @@
 			</div>
 		</div>
 	</main>
+
+  <template id="tags-template">
+    <div class="tags__item" name="">
+      <p class="tags__text"></p>
+      <button type="button" class="tags__icon"></button>
+    </div>
+  </template>
+
 </body>
 
 </html>
