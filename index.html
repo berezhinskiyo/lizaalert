@@ -30,11 +30,11 @@
 	<main class="main">
 		<h1 class="main__title">Курсы</h1>
 		<div class="content">
-			<div class="filters">
+			<form id="menu" class="filters">
 				<ul class="menu">
 					<li class="menu__item">
 						<h2 class="menu__title">Фильтры</h2>
-						<p class="menu__erase menu__erase_active">Очистить</p>
+						<input type="reset" value="Очистить" placeholder="Очистить" class="menu__erase">
 					</li>
 					<li class="menu__item">
 						<div class="menu__item-sub">
@@ -53,7 +53,7 @@
 							<h3 class="menu__item-title">Уровень</h3>
 							<button type="button" class="menu__item-icon menu__item-icon_active"></button>
 						</div>
-						<form name="level" class="menu__inner menu__inner_active">
+						<div class="menu__inner menu__inner_active">
 							<label class="menu__inner-item" for="novice">
 								<input type="checkbox" name="lev" id="novice"
 									class="menu__inner-item menu__inner-item_el_extra-options" value="novice">
@@ -72,14 +72,14 @@
 								<span class="menu__pseudo-item menu__pseudo-item_type_checkbox"></span>
 								<span class="menu__inner-item-text" id="profi-txt">Профессионал</span>
 							</label>
-						</form>
+						</div>
 					</li>
 					<li class="menu__item">
 						<div class="menu__item-sub">
 							<h3 class="menu__item-title">Статус</h3>
 							<button type="button" class="menu__item-icon menu__item-icon_active"></button>
 						</div>
-						<form name="status" class="menu__inner menu__inner_active">
+						<div class="menu__inner menu__inner_active">
 							<label class="menu__inner-item" for="inactive">
 								<input type="checkbox" name="stat" id="inactive"
 									class="menu__inner-item menu__inner-item_el_extra-options" value="inactive">
@@ -104,13 +104,13 @@
 								<span class="menu__pseudo-item menu__pseudo-item_type_checkbox"></span>
 								<span class="menu__inner-item-text">Пройден</span>
 							</label>
-						</form>
+						</div>
 					</li>
 				</ul>
 
 				<div class="tags">
 				</div>
-			</div>
+			</form>
 			<div class="content__kurs">
 				<div class="card-list">
 					<img class="card-list__img" src="images/01.jpg" alt="Собака">
