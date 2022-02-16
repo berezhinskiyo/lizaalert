@@ -1,15 +1,15 @@
 const template = document.querySelector('#tags-template').content;
 const menuItems = document.querySelectorAll('.menu__item');
+const menuInnerItems = document.querySelectorAll('.menu__inner-item');
 const tags = document.querySelector('.tags');
-const novice = document.getElementById('novice');
-const noviceTxt = document.querySelector('label[for=' + novice.value + ']').querySelector('.menu__inner-item-text').textContent;
-console.log(noviceTxt);
-const advance = document.getElementById('advance');
-const advanceTxt = document.querySelector('label[for=' + advance.value + ']').querySelector('.menu__inner-item-text').textContent;
-const profi = document.getElementById('profi');
-const profiTxt = document.querySelector('label[for=' + profi.value + ']').querySelector('.menu__inner-item-text').textContent;
+const noviceTxt = document.querySelector('#novice-txt').textContent;
+const advanceTxt = document.querySelector('#advance-txt').textContent;
+const profiTxt = document.querySelector('#profi-txt').textContent;
+//const profi = document.getElementById('profi');
 
-// Функция открытия-закрытия списков фильтров
+//todo disabled; сброс таблицы;
+
+// Функция открытия-закрытия меню
 function closeOpenFilters(menuItem) {
   if(menuItem.querySelector('.menu__item-icon')) {
     menuItem.querySelector('.menu__item-icon').classList.toggle('menu__item-icon_active');
@@ -36,29 +36,40 @@ function deleteTag(name) {
 	document.getElementsByName(name)[0].remove();
 }
 
+// Слушатели чекбоксов
+menuInnerItems.forEach((item) => {
+  if(item.querySelector('#novice')) {
+    item.querySelector('#novice').addEventListener('change', function() {
+      if (this.checked) {
+        tags.append(createTag(noviceTxt, this.id));
+      } else {
+        deleteTag(this.id);
+      }
+    });
+  }
+  if(item.querySelector('#advance')) {
+    item.querySelector('#advance').addEventListener('change', function() {
+      if (this.checked) {
+        tags.append(createTag(advanceTxt, this.id));
+      } else {
+        deleteTag(this.id);
+      }
+    });
+  }
+  if(item.querySelector('#profi')) {
+    item.querySelector('#profi').addEventListener('change', function() {
+      if (this.checked) {
+        tags.append(createTag(profiTxt, this.id));
+      } else {
+        deleteTag(this.id);
+      }
+    });
+  }
+});
+
+// Слушатели открытия меню
 menuItems.forEach((item) => {
   item.addEventListener('click',  evt => {
     closeOpenFilters(item);
   });
-});
-novice.addEventListener('change', function() {
-	if (this.checked) {
-		tags.append(createTag(noviceTxt, this.id));
-	} else {
-    deleteTag(this.id);
-  }
-});
-advance.addEventListener('change', function() {
-	if (this.checked) {
-		tags.append(createTag(advanceTxt, this.id));
-	} else {
-    deleteTag(this.id);
-  }
-});
-profi.addEventListener('change', function() {
-	if (this.checked) {
-		tags.append(createTag(profiTxt, this.id));
-	} else {
-    deleteTag(this.id);
-  }
 });
