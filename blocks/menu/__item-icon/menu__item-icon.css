@@ -6,7 +6,3 @@
 	background-image: url('../../../images/icon-item.svg');
 	border: none;
 }
-
-.menu__item-icon:hover {
-	cursor: pointer;
-}
