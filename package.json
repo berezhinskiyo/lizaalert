@@ -2,9 +2,9 @@
 	"private": true,
 	"devDependencies": {
 		"@htmlacademy/editorconfig-cli": "1.0.0",
+		"eslint": "^8.7.0",
 		"stylelint": "13.13.1",
-		"stylelint-order": "^5.0.0",
-		"eslint": "^8.7.0"
+		"stylelint-order": "^5.0.0"
 	},
 	"scripts": {
 		"editorconfig": "editorconfig-cli",
@@ -20,5 +20,8 @@
 	"engines": {
 		"node": "^16"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"imask": "^6.4.2"
+	}
 }
