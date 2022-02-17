@@ -5,9 +5,7 @@
 	box-sizing: border-box;
 	width: 100%;
 	margin: 0;
-	margin-bottom: 32px;
-	padding: 32px;
-	background: #ffffff;
-	border-radius: 16px;
-	box-shadow: 0 0 4px rgba(231, 232, 235, 0.6), 0 4px 16px rgba(231, 232, 235, 0.6);
+	margin-bottom: 33px;
+	padding-right: 32px;
+	padding-left: 32px;
 }
