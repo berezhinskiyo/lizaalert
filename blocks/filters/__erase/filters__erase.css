@@ -1,4 +1,4 @@
-.menu__erase {
+.filters__erase {
 	display: none;
 	margin: 0;
 	color: #212329;
@@ -10,6 +10,6 @@
 	border: none;
 }
 
-.menu__erase:hover {
+.filters__erase:hover {
 	cursor: pointer;
 }

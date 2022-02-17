@@ -1,5 +1,5 @@
 .main__title {
-	width: 1440px;
+	max-width: 1440px;
 	margin: 0;
 	padding-bottom: 34px;
 	font-weight: bold;

@@ -29,87 +29,88 @@
 	<main class="main">
 		<h1 class="main__title">Курсы</h1>
 		<div class="content">
-			<form id="menu" class="filters">
-				<ul class="menu">
-					<li class="menu__item">
-						<h2 class="menu__title">Фильтры</h2>
-						<input type="reset" value="Очистить" placeholder="Очистить" class="menu__erase">
-					</li>
-					<li class="menu__item">
-						<div class="menu__item-sub">
-							<h3 class="menu__item-title">Категория</h3>
-							<button type="button" class="menu__item-icon"></button>
-						</div>
-					</li>
-					<li class="menu__item">
-						<div class="menu__item-sub">
-							<h3 class="menu__item-title">Тематика</h3>
-							<button type="button" class="menu__item-icon"></button>
-						</div>
-					</li>
-					<li class="menu__item">
-						<div class="menu__item-sub">
-							<h3 class="menu__item-title">Уровень</h3>
-							<button type="button" class="menu__item-icon menu__item-icon_active"></button>
-						</div>
-						<div class="menu__inner menu__inner_active">
-							<label class="menu__inner-item" for="novice">
-								<input type="checkbox" name="lev" id="novice"
-									class="menu__inner-item menu__inner-item_el_extra-options" value="novice">
-								<span class="menu__pseudo-item menu__pseudo-item_type_checkbox"></span>
-								<span class="menu__inner-item-text" id="novice-txt">Новичок</span>
-							</label>
-							<label class="menu__inner-item" for="advance">
-								<input type="checkbox" name="lev" id="advance"
-									class="menu__inner-item menu__inner-item_el_extra-options" value="advance">
-								<span class="menu__pseudo-item menu__pseudo-item_type_checkbox"></span>
-								<span class="menu__inner-item-text" id="advance-txt">Бывалый</span>
-							</label>
-							<label class="menu__inner-item" for="profi">
-								<input type="checkbox" name="lev" id="profi"
-									class="menu__inner-item menu__inner-item_el_extra-options" value="profi">
-								<span class="menu__pseudo-item menu__pseudo-item_type_checkbox"></span>
-								<span class="menu__inner-item-text" id="profi-txt">Профессионал</span>
-							</label>
-						</div>
-					</li>
-					<li class="menu__item">
-						<div class="menu__item-sub">
-							<h3 class="menu__item-title">Статус</h3>
-							<button type="button" class="menu__item-icon menu__item-icon_active"></button>
-						</div>
-						<div class="menu__inner menu__inner_active">
-							<label class="menu__inner-item" for="inactive">
-								<input type="checkbox" name="stat" id="inactive"
-									class="menu__inner-item menu__inner-item_el_extra-options" value="inactive">
-								<span class="menu__pseudo-item menu__pseudo-item_type_checkbox"></span>
-								<span class="menu__inner-item-text">Не активный</span>
-							</label>
-							<label class="menu__inner-item" for="recorded">
-								<input type="checkbox" name="stat" id="recorded"
-									class="menu__inner-item menu__inner-item_el_extra-options" value="recorded">
-								<span class="menu__pseudo-item menu__pseudo-item_type_checkbox"></span>
-								<span class="menu__inner-item-text">Вы записаны</span>
-							</label>
-							<label class="menu__inner-item" for="active">
-								<input type="checkbox" name="stat" id="active"
-									class="menu__inner-item menu__inner-item_el_extra-options" value="active">
-								<span class="menu__pseudo-item menu__pseudo-item_type_checkbox"></span>
-								<span class="menu__inner-item-text">Активный</span>
-							</label>
-							<label class="menu__inner-item" for="finished">
-								<input type="checkbox" name="stat" id="finished"
-									class="menu__inner-item menu__inner-item_el_extra-options" value="finished">
-								<span class="menu__pseudo-item menu__pseudo-item_type_checkbox"></span>
-								<span class="menu__inner-item-text">Пройден</span>
-							</label>
-						</div>
-					</li>
-				</ul>
-
+			<div class="filters-wrap">
+				<form id="menu" class="filters">
+					<div class="filters__head">
+						<h2 class="filters__title">Фильтры</h2>
+						<input type="reset" value="Очистить" class="filters__erase filters__erase_active">
+					</div>
+					<ul class="menu">
+						<li class="menu__item">
+							<div class="menu__item-sub">
+								<h3 class="menu__item-title">Категория</h3>
+								<button type="button" class="menu__item-icon"></button>
+							</div>
+						</li>
+						<li class="menu__item">
+							<div class="menu__item-sub">
+								<h3 class="menu__item-title">Тематика</h3>
+								<button type="button" class="menu__item-icon"></button>
+							</div>
+						</li>
+						<li class="menu__item">
+							<div class="menu__item-sub">
+								<h3 class="menu__item-title">Уровень</h3>
+								<button type="button" class="menu__item-icon menu__item-icon_active"></button>
+							</div>
+							<div class="menu__inner menu__inner_active">
+								<label class="menu__inner-item" for="novice">
+									<input type="checkbox" name="lev" id="novice"
+										class="menu__inner-item menu__inner-item_el_extra-options" value="novice">
+									<span class="menu__pseudo-item menu__pseudo-item_type_checkbox"></span>
+									<span class="menu__inner-item-text" id="novice-txt">Новичок</span>
+								</label>
+								<label class="menu__inner-item" for="advance">
+									<input type="checkbox" name="lev" id="advance"
+										class="menu__inner-item menu__inner-item_el_extra-options" value="advance">
+									<span class="menu__pseudo-item menu__pseudo-item_type_checkbox"></span>
+									<span class="menu__inner-item-text" id="advance-txt">Бывалый</span>
+								</label>
+								<label class="menu__inner-item" for="profi">
+									<input type="checkbox" name="lev" id="profi"
+										class="menu__inner-item menu__inner-item_el_extra-options" value="profi">
+									<span class="menu__pseudo-item menu__pseudo-item_type_checkbox"></span>
+									<span class="menu__inner-item-text" id="profi-txt">Профессионал</span>
+								</label>
+							</div>
+						</li>
+						<li class="menu__item">
+							<div class="menu__item-sub">
+								<h3 class="menu__item-title">Статус</h3>
+								<button type="button" class="menu__item-icon menu__item-icon_active"></button>
+							</div>
+							<div class="menu__inner menu__inner_active">
+								<label class="menu__inner-item" for="inactive">
+									<input type="checkbox" name="stat" id="inactive"
+										class="menu__inner-item menu__inner-item_el_extra-options" value="inactive">
+									<span class="menu__pseudo-item menu__pseudo-item_type_checkbox"></span>
+									<span class="menu__inner-item-text">Не активный</span>
+								</label>
+								<label class="menu__inner-item" for="recorded">
+									<input type="checkbox" name="stat" id="recorded"
+										class="menu__inner-item menu__inner-item_el_extra-options" value="recorded">
+									<span class="menu__pseudo-item menu__pseudo-item_type_checkbox"></span>
+									<span class="menu__inner-item-text">Вы записаны</span>
+								</label>
+								<label class="menu__inner-item" for="active">
+									<input type="checkbox" name="stat" id="active"
+										class="menu__inner-item menu__inner-item_el_extra-options" value="active">
+									<span class="menu__pseudo-item menu__pseudo-item_type_checkbox"></span>
+									<span class="menu__inner-item-text">Активный</span>
+								</label>
+								<label class="menu__inner-item" for="finished">
+									<input type="checkbox" name="stat" id="finished"
+										class="menu__inner-item menu__inner-item_el_extra-options" value="finished">
+									<span class="menu__pseudo-item menu__pseudo-item_type_checkbox"></span>
+									<span class="menu__inner-item-text">Пройден</span>
+								</label>
+							</div>
+						</li>
+					</ul>
+				</form>
 				<div class="tags">
 				</div>
-			</form>
+			</div>
 			<div class="content__kurs">
 				<div class="card-list">
 					<img class="card-list__img" src="images/01.jpg" alt="Собака">
