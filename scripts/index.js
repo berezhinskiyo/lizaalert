@@ -5,7 +5,7 @@ const tags = document.querySelector('.tags');
 const noviceTxt = document.querySelector('#novice-txt').textContent;
 const advanceTxt = document.querySelector('#advance-txt').textContent;
 const profiTxt = document.querySelector('#profi-txt').textContent;
-const eraseButton = document.querySelector('.menu__erase');
+const eraseButton = document.querySelector('.filters__erase');
 const buttons = document.querySelectorAll('.card-list__card-button');
 const activeCheckbox = document.querySelector('#active');
 const inactiveCheckbox = document.querySelector('#inactive');
@@ -49,14 +49,14 @@ function deleteTag(name) {
 function addListener(item, name, text = 'noTag') {
 	item.querySelector(name).addEventListener('change', function() {
 		if (!check()){
-			eraseButton.classList.remove('menu__erase_active');
+			eraseButton.classList.remove('filters__erase_active');
 		}
 		// Если нужно создавать тэг
 		if (this.checked && text !== 'noTag') {
 			tags.append(createTag(text, this.id));
-			eraseButton.classList.add('menu__erase_active');
+			eraseButton.classList.add('filters__erase_active');
 		} else if (this.checked && text === 'noTag') {
-			eraseButton.classList.add('menu__erase_active');
+			eraseButton.classList.add('filters__erase_active');
 			// для отключения взаимоисключающих статусов
 			if (name === '#inactive') {
 				activeCheckbox.disabled = true;
@@ -113,7 +113,7 @@ eraseButton.addEventListener('click', evt => {
 	});
 	activeCheckbox.disabled = false;
 	inactiveCheckbox.disabled = false;
-	eraseButton.classList.remove('menu__erase_active');
+	eraseButton.classList.remove('filters__erase_active');
 });
 
 // кнопка
