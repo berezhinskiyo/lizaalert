@@ -17,3 +17,7 @@
 	border-radius: 16px;
 	cursor: pointer;
 }
+
+.card-list__card-button:hover{
+	cursor: pointer;
+}

@@ -19,3 +19,7 @@
 	color: #9397a3;
 	background-color: #e6e7eb;
 }
+
+.edit-form__button:hover {
+	cursor: pointer;
+}
