@@ -1,6 +1,6 @@
 .account-overview__avatar {
-	margin: 32px 56px 12px 56px;
 	width: 200px;
+	margin: 32px 56px 12px 56px;
 	height: 200px;
 	border-radius: 50%;
 	object-fit: cover;
