@@ -44,10 +44,10 @@
 @import url('../blocks/card-list/__info/card-list__info.css');
 @import url('../blocks/card-list/__time/card-list__time.css');
 @import url('../blocks/card-list/__icon/card-list__icon.css');
-@import url('../blocks/card-list/__icon/_book/card-list__icon_book.css');
-@import url('../blocks/card-list/__icon/_clock/card-list__icon_clock.css');
+@import url('../blocks/card-list/__icon/_img/card-list__icon_img_book.css');
+@import url('../blocks/card-list/__icon/_img/card-list__icon_img_clock.css');
 @import url('../blocks/card-list/__time-text/card-list__time-text.css');
 @import url('../blocks/card-list/__card-button/card-list__card-button.css');
-@import url('../blocks/card-list/__card-button/_continue/card-list__card-button_continue.css');
-@import url('../blocks/card-list/__card-button/_sign-up/card-list__card-button_sign-up.css');
-@import url('../blocks/card-list/__card-button/_passed/card-list__card-button_passed.css');
+@import url('../blocks/card-list/__card-button/_status/card-list__card-button_status_continue.css');
+@import url('../blocks/card-list/__card-button/_status/card-list__card-button_status_sign-up.css');
+@import url('../blocks/card-list/__card-button/_status/card-list__card-button_status_passed.css');
