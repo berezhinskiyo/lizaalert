@@ -20,7 +20,7 @@
 }
 
 .menu__inner-item-text::before {
-	content: "";
+	content: '';
 	display: inline-block;
 	width: 24px;
 	height: 24px;
