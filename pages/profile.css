@@ -1,6 +1,7 @@
 @import url('../vendor/normalize.css');
 @import url('../vendor/fonts.css');
 @import url('../blocks/page/page.css');
+@import url('../blocks/interactive-item/interactive-item.css');
 @import url('../blocks/header/__title/header__title.css');
 @import url('../blocks/header/__logo/header__logo.css');
 @import url('../blocks/header/__link/header__link.css');
@@ -16,7 +17,6 @@
 @import url('../blocks/edit-form/edit-form.css');
 @import url('../blocks/edit-form/__personal-data/edit-form__personal-data.css');
 @import url('../blocks/text-field/text-field.css');
-@import url('../blocks/text-field/__icon/text-field__icon.css');
 @import url('../blocks/text-field/__image/text-field__image.css');
 @import url('../blocks/text-field/__image/_type/text-field__image_type_photo.css');
 @import url('../blocks/text-field/__image/_type/text-field__image_type_text.css');

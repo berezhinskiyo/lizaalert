@@ -14,12 +14,12 @@
 		<nav>
 			<ul class="header__links">
 				<li>
-					<a class="header__link" href="./index.html">
+					<a class="header__link interactive-item" href="./index.html">
 						<img class="header__logo" src="./images/Kurs.svg" alt="Академическая шапочка" />Курсы
 					</a>
 				</li>
-				<li class="header__link">
-					<a class="header__link header__link_active" href="./profile.html">
+				<li>
+					<a class="header__link header__link_active interactive-item" href="#">
 						<img class="header__logo" src="./images/Profile_active.svg" alt="Человечек в круге" />Профиль
 					</a>
 				</li>
@@ -30,7 +30,7 @@
 		<h1 class="main__title">Профиль</h1>
 		<div class="content">
 			<div class="account-overview">
-				<img src="./images/avatar.svg" alt="Фотография пользователя" class="account-overview__avatar" />
+				<img src="./images/avatar.png" alt="Фотография пользователя" class="account-overview__avatar" />
 				<h3 class="account-overview__capture">
 					Иванова Анна Сидоровна
 				</h3>
@@ -53,52 +53,44 @@
 			</div>
 			<div class="content__profile">
 
-				<form class="edit-form">
+				<form class="edit-form" name="personal-data-form">
 					<fieldset class="edit-form__personal-data">
-						<h3 class="edit-form__title">Личные данные</h3>
+						<h2 class="edit-form__title">Личные данные</h2>
 						<div class="text-field">
 							<label class="text-field__label" for="fio">ФИО</label>
-							<div class="text-field__icon">
-								<input id="fio" class="text-field__input" type="text"
-									placeholder="Фамилия Имя Отчество" />
-								<div class="text-field__image text-field__image_type_text"></div>
-
-							</div>
+							<input id="fio"
+								class="text-field__input text-field__image text-field__image_type_text interactive-item"
+								type="text" placeholder="Фамилия Имя Отчество" />
 						</div>
 						<div class="text-field">
 							<label class="text-field__label" for="date-of-birth">Дата рождения</label>
-							<div class="text-field__icon">
-								<input id="date-of-birth" name="date-of-birth" class="text-field__input" type="text"
-									placeholder="01.01.1900" maxlength="10" />
-								<div class="text-field__image text-field__image_type_text"></div>
-							</div>
+							<input id="date-of-birth" name="date-of-birth"
+								class="text-field__input text-field__image text-field__image_type_text  interactive-item"
+								type="text" placeholder="01.01.1900" maxlength="10" />
 						</div>
 
 						<div class="text-field">
 							<label class="text-field__label" for="city">Геграфический регион</label>
-							<div class="text-field__icon">
-								<input id="city" class="text-field__input" type="text" placeholder="г. Москва" />
-								<div class="text-field__image text-field__image_type_text"></div>
-							</div>
+							<input id="city"
+								class="text-field__input text-field__image text-field__image_type_text  interactive-item"
+								type="text" placeholder="г. Москва" />
 						</div>
 
 						<div class="text-field">
 							<label class="text-field__label" for="nick-name">Позывной на форуме</label>
-							<div class="text-field__icon">
-								<input id="nick-name" class="text-field__input" type="text"
-									placeholder="Позывной на форуме" />
-								<div class="text-field__image text-field__image_type_text"></div>
-							</div>
+							<input id="nick-name"
+								class="text-field__input text-field__image text-field__image_type_text  interactive-item"
+								type="text" placeholder="Позывной на форуме" />
 						</div>
 
 						<div class="text-field">
 							<label class="text-field__label" for="photo">Фото</label>
-							<div class="text-field__icon">
-								<input id="photo" class="text-field__input" type="text" placeholder="email@yandex.ru" />
-								<div class="text-field__image text-field__image_type_photo"></div>
-							</div>
+							<input id="photo"
+								class="text-field__input text-field__image text-field__image_type_photo  interactive-item"
+								type="text" placeholder="email@yandex.ru" />
 						</div>
-						<button type="submit" class="edit-form__button" disabled>
+
+						<button type="submit" class="edit-form__button interactive-item" disabled>
 							Сохранить изменения
 						</button>
 					</fieldset>
@@ -124,35 +116,30 @@
 						<li>размер не&nbsp;более 3&nbsp;МБ</li>
 					</ul>
 				</div>
-				<form class="edit-form">
+				<form class="edit-form" name="account-form">
 					<fieldset class="edit-form__personal-data">
-						<h3 class="edit-form__title">Аккаунт</h3>
+						<h2 class="edit-form__title">Аккаунт</h2>
 
 						<div class="text-field">
 							<label class="text-field__label" for="tel">Номер телефона</label>
-							<div class="text-field__icon">
-								<input id="tel" class="text-field__input" type="tel" placeholder="+7 123 45 67" />
-								<div class="text-field__image text-field__image_type_text"></div>
-							</div>
+							<input id="tel"
+								class="text-field__input text-field__image text-field__image_type_text  interactive-item"
+								type="tel" placeholder="+7 123 45 67" />
 						</div>
 
 						<div class="text-field">
 							<label class="text-field__label" for="email">Email</label>
-							<div class="text-field__icon">
-								<input id="email" class="text-field__input" type="email" placeholder="test@yandex.ru" />
-								<div class="text-field__image text-field__image_type_text"></div>
-							</div>
+							<input id="email"
+								class="text-field__input text-field__image text-field__image_type_text  interactive-item"
+								type="email" placeholder="test@yandex.ru" />
 						</div>
 
 						<div class="text-field">
 							<label class="text-field__label" for="password">Пароль</label>
-							<div class="text-field__icon">
-								<input id="password" class="text-field__input" type="password" />
-								<div class="text-field__image"></div>
-							</div>
+							<input id="password" class="text-field__input  interactive-item" type="password" />
 						</div>
 
-						<button type="submit" class="edit-form__button">
+						<button type="submit" class="edit-form__button  interactive-item">
 							Сохранить изменения
 						</button>
 					</fieldset>
