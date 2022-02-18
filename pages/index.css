@@ -22,10 +22,6 @@
 @import url('../blocks/menu/__inner-item/menu__inner-item.css');
 @import url('../blocks/menu/__inner-item/_el/menu__inner-item_el_extra-options.css');
 @import url('../blocks/menu/__inner-item-text/menu__inner-item-text.css');
-@import url('../blocks/menu/__input-checkbox/menu__input-checkbox.css');
-@import url('../blocks/menu/__input-label/menu__input-label.css');
-@import url('../blocks/menu/__pseudo-item/menu__pseudo-item.css');
-@import url('../blocks/menu/__pseudo-item/_type/menu__pseudo-item_type_checkbox.css');
 @import url('../blocks/menu/__inner/menu__inner.css');
 @import url('../blocks/menu/__inner/_active/menu__inner_active.css');
 @import url('../blocks/menu/__item/menu__item.css');
