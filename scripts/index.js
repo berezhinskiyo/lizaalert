@@ -29,6 +29,9 @@ function createTag(tagTxt, name) {
 	delButton.addEventListener('click', () => {
 		delButton.remove();
 		document.getElementById(name).checked = false;
+		if (!check()){
+			eraseButton.classList.remove('filters__erase_active');
+		}
 	});
 	return newTag;
 }
