@@ -1,0 +1,10 @@
+.interactive-item {
+	text-decoration: none;
+	opacity: 100%;
+	transition: opacity 1s ease-out;
+}
+
+.interactive-item:hover {
+	cursor: pointer;
+	opacity: 50%;
+}

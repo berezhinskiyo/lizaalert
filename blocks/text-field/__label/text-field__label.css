@@ -1,0 +1,11 @@
+.text-field__label {
+	display: block;
+	margin: 0;
+	padding: 0 0 8px 16px;
+	color: #9397a3;
+	font-weight: 400;
+	font-size: 18px;
+	font-family: 'Golos', 'Arial', sans-serif;
+	font-style: normal;
+	line-height: 1.33;
+}

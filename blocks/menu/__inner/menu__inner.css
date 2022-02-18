@@ -1,0 +1,6 @@
+.menu__inner {
+	display: none;
+	flex-direction: column;
+	row-gap: 16px;
+	padding-top: 31px;
+}

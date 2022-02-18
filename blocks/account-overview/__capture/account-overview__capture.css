@@ -1,0 +1,10 @@
+.account-overview__capture {
+	margin: 0;
+	margin-block-start: 0;
+	margin-block-end: 0;
+	font-weight: bold;
+	font-size: 18px;
+	font-style: normal;
+	line-height: 1.33;
+	text-align: center;
+}

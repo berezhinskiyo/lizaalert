@@ -1,0 +1,22 @@
+.edit-form__button{
+	width: 246px;
+	height: 48px;
+	margin: 0 auto 0 auto;
+	padding: 0;
+	color: #ffffff;
+	font-weight: 500;
+	font-size: 18px;
+	font-family: 'Golos', 'Arial', sans-serif;
+	font-style: normal;
+	line-height: 1.55;
+	background: #f06000;
+	border: 0;
+	border-radius: 16px;
+	cursor: pointer;
+}
+
+.edit-form__button:disabled {
+	color: #9397a3;
+	background-color: #e6e7eb;
+}
+

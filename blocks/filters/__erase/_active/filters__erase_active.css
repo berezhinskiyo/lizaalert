@@ -1,0 +1,7 @@
+.filters__erase_active {
+	display: block;
+}
+
+.filters__erase_active:hover {
+	cursor: pointer;
+}

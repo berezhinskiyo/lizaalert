@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>LizaAlert</title>
+	<link rel="stylesheet" href="pages/profile.css" />
+</head>
+
+<body class="page">
+	<header class="header">
+		<a class="header__title" href="./index.html">Учебная платформа</a>
+		<nav>
+			<ul class="header__links">
+				<li>
+					<a class="header__link interactive-item" href="./index.html">
+						<img class="header__logo" src="./images/Kurs.svg" alt="Академическая шапочка" />Курсы
+					</a>
+				</li>
+				<li>
+					<a class="header__link header__link_active interactive-item" href="#">
+						<img class="header__logo" src="./images/Profile_active.svg" alt="Человечек в круге" />Профиль
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main class="main">
+		<h1 class="main__title">Профиль</h1>
+		<div class="content">
+			<div class="account-overview">
+				<img src="./images/avatar.png" alt="Фотография пользователя" class="account-overview__avatar" />
+				<h3 class="account-overview__capture">
+					Иванова Анна Сидоровна
+				</h3>
+				<div class="account-overview__statuses">
+					<img src="./images/net.svg" alt="Значок опыта" class="account-overview__pic" />
+					<p class="account-overview__status">Профессионал</p>
+					<img src="./images/medal.svg" alt="Значок профессии" class="account-overview__pic" />
+					<p class="account-overview__status">Картограф</p>
+					<img src="./images/cap.svg" alt="Значок прогресса" class="account-overview__pic" />
+					<p class="account-overview__status">Пройдено 2 курса</p>
+				</div>
+				<a class="account-overview__exit-button" href="#" target="_blank">
+					<span class="account-overview__exit-button-wrapper">
+						<img src="./images/door.svg" alt="Значок выхода" class="account-overview__button-pic" />
+						<span class="account-overview__button-text">
+							Выйти из аккаунта
+						</span>
+					</span>
+				</a>
+			</div>
+			<div class="content__profile">
+
+				<form class="edit-form" name="personal-data-form">
+					<fieldset class="edit-form__personal-data">
+						<h2 class="edit-form__title">Личные данные</h2>
+						<div class="text-field">
+							<label class="text-field__label" for="fio">ФИО</label>
+							<input id="fio"
+								class="text-field__input text-field__image text-field__image_type_text interactive-item"
+								type="text" placeholder="Фамилия Имя Отчество" />
+						</div>
+						<div class="text-field">
+							<label class="text-field__label" for="date-of-birth">Дата рождения</label>
+							<input id="date-of-birth" name="date-of-birth"
+								class="text-field__input text-field__image text-field__image_type_text  interactive-item"
+								type="text" placeholder="01.01.1900" maxlength="10" />
+						</div>
+
+						<div class="text-field">
+							<label class="text-field__label" for="city">Геграфический регион</label>
+							<input id="city"
+								class="text-field__input text-field__image text-field__image_type_text  interactive-item"
+								type="text" placeholder="г. Москва" />
+						</div>
+
+						<div class="text-field">
+							<label class="text-field__label" for="nick-name">Позывной на форуме</label>
+							<input id="nick-name"
+								class="text-field__input text-field__image text-field__image_type_text  interactive-item"
+								type="text" placeholder="Позывной на форуме" />
+						</div>
+
+						<div class="text-field">
+							<label class="text-field__label" for="photo">Фото</label>
+							<input id="photo"
+								class="text-field__input text-field__image text-field__image_type_photo  interactive-item"
+								type="text" placeholder="email@yandex.ru" />
+						</div>
+
+						<button type="submit" class="edit-form__button interactive-item" disabled>
+							Сохранить изменения
+						</button>
+					</fieldset>
+				</form>
+
+				<div class="instruction">
+					<p class="instruction__paragraph">
+						Просьба указывать настоящие ФИО, это нужно для получения сертификатов
+					</p>
+					<p class="instruction__paragraph">
+						Географический регион влияет на&nbsp;доступность некоторых курсов и&nbsp;занятий
+					</p>
+					<p class="instruction__paragraph">
+						Если вы&nbsp;не&nbsp;хотите, чтобы другие пользователи видели ваши ФИО, укажите позывной
+						на&nbsp;форуме&nbsp;&mdash;
+						он&nbsp;будет отображаться вместо ваших настоящих данных
+					</p>
+					<p class="instruction__paragraph">
+						Требования к&nbsp;загружаемому фото:
+					</p>
+					<ul class="instruction__inner-list">
+						<li>разрешение не&nbsp;менее 640&times;640px</li>
+						<li>размер не&nbsp;более 3&nbsp;МБ</li>
+					</ul>
+				</div>
+				<form class="edit-form" name="account-form">
+					<fieldset class="edit-form__personal-data">
+						<h2 class="edit-form__title">Аккаунт</h2>
+
+						<div class="text-field">
+							<label class="text-field__label" for="tel">Номер телефона</label>
+							<input id="tel"
+								class="text-field__input text-field__image text-field__image_type_text  interactive-item"
+								type="tel" placeholder="+7 123 45 67" />
+						</div>
+
+						<div class="text-field">
+							<label class="text-field__label" for="email">Email</label>
+							<input id="email"
+								class="text-field__input text-field__image text-field__image_type_text  interactive-item"
+								type="email" placeholder="test@yandex.ru" />
+						</div>
+
+						<div class="text-field">
+							<label class="text-field__label" for="password">Пароль</label>
+							<input id="password" class="text-field__input  interactive-item" type="password" />
+						</div>
+
+						<button type="submit" class="edit-form__button  interactive-item">
+							Сохранить изменения
+						</button>
+					</fieldset>
+				</form>
+				<div class="instruction">
+					<p class="instruction__paragraph">
+						Номер телефона используется как уникальный идентификатор пользователя, поэтому его нельзя
+						поменять вручную
+					</p>
+					<p class="instruction__paragraph">
+						Если по&nbsp;какой-то причине у&nbsp;вас нет доступа к&nbsp;номеру телефона на&nbsp;который
+						вы&nbsp;регистрировали
+						аккаунт, напишите в&nbsp;поддержку
+					</p>
+					<p class="instruction__paragraph">
+						Email нужен для восстановления пароля
+					</p>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script type="module" src="https://unpkg.com/imask"></script>
+	<script src="./scripts/profile.js" defer=""></script>
+</body>
+
+</html>
