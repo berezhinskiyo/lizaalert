@@ -8,7 +8,7 @@
 
 .menu__inner-item_el_extra-options:checked ~ .menu__inner-item-text::before {
 	color: #f06000;
-	background-image: url('../../../../images/icon-inner-active.svg');
+	background-image: url('../../../images/icon-inner-active.svg');
 }
 
 .menu__inner-item_el_extra-options:disabled ~ .menu__inner-item-text {
@@ -16,7 +16,7 @@
 }
 
 .menu__inner-item_el_extra-options:disabled ~ .menu__inner-item-text::before {
-	background-image: url('../../../../images/icon-inner-disabled.svg');
+	background-image: url('../../../images/icon-inner-disabled.svg');
 }
 
 .menu__inner-item-text::before {
