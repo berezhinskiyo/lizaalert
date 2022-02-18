@@ -1,9 +1,0 @@
-.menu__pseudo-item {
-	display: inline-block;
-	width: 24px;
-	height: 24px;
-	vertical-align: bottom;
-	background-image: url('../../../images/icon-inner.svg');
-	background-repeat: no-repeat;
-	background-size: contain;
-}
